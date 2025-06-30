@@ -1,6 +1,10 @@
-
+:root {
+  --font-family: "Rubik", sans-serif;
+}
 
 body {
+  background-color: #FCEEE6;
+  color: #0B0500;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
