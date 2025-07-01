@@ -12,14 +12,12 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-
   margin-bottom: 24px;
 }
 .article-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-
   margin-bottom: 32px;
 }
 .article-picture {
@@ -29,9 +27,9 @@
 }
 
 .article-img {
-  display: block; /* Забезпечує коректне відображення зображення */
-  margin: 0 auto; /* Центрування для додаткової впевненості */
-  max-width: 100%; /* Адаптивне масштабування */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
   height: auto;
   border-radius: 16px;
 }
