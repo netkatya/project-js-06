@@ -1,5 +1,5 @@
 .article {
-  padding: 64px 15px;
+  padding: 64px 16px;
 }
 .container {
 }
@@ -24,10 +24,14 @@
 }
 .article-picture {
 }
+
 .article-image {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
+
 .article-img {
+  display: block; /* Забезпечує коректне відображення зображення */
+  margin: 0 auto; /* Центрування для додаткової впевненості */
+  max-width: 100%; /* Адаптивне масштабування */
+  height: auto;
+  border-radius: 16px;
 }
