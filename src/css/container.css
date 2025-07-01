@@ -3,12 +3,16 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -16,5 +20,7 @@
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
