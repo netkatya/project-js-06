@@ -12,15 +12,24 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #0b0500;
+
   margin-bottom: 24px;
 }
 .article-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #0b0500;
+
   margin-bottom: 32px;
 }
+.article-picture {
+}
+.article-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .article-img {
+  width: 100%;
+  height: 100%;
 }
