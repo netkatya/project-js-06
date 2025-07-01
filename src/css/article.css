@@ -1,0 +1,26 @@
+.article {
+  padding: 64px 15px;
+}
+.container {
+}
+.article-cont {
+  margin: 0 auto;
+  max-width: 343px;
+}
+.article-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0500;
+  margin-bottom: 24px;
+}
+.article-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0500;
+  margin-bottom: 32px;
+}
+.article-img {
+}
