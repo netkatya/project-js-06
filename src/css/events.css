@@ -1,6 +1,7 @@
 .events {
     padding-top: 64px;
     padding-bottom: 64px;
+    /* position: relative; */
 }
 
 .events-events {
@@ -27,13 +28,14 @@
 }
 
 .swiper-slide {
-    position: relative;
+    
     height: 545px;
 }
 
 .events-list-picture {
     height: 342px;
     height: 277px;
+    overflow: hidden;
     object-fit: cover;
     border-radius: 16px;
 }
@@ -68,17 +70,54 @@
     height: 24px;
     background-color: inherit;
     display: flex;
+    gap: 8px;
+    align-items: center;
     margin-top: auto;
     padding-left: 0;
-    position: absolute;
+    
     bottom: 24px;
     left: 0;
+    margin-bottom: 56px;
+}
+
+.events-list-button:hover {
+    font-weight: 600;
 }
 
 .events-list-button-arrow {
     fill: #0B0500;
 }
+/* swiper */
+.swiper-tools {
+    display: flex;
+}
 
+
+.swiper {
+    width: 100%;
+    
+    padding-block: 2rem;
+}
+
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+.custom-prew {
+   
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: #E15D05;
+}
+
+.custom-next {
+   
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: #E15D05;
+}
 
 @media screen and (min-width: 768px) {
     .swiper-wrapper {
@@ -89,14 +128,25 @@
     .swiper-slide {
         width: 340px;
     }
+
+    .events-list-picture {
+        height: 340px;
+    }
+
+    .events-list-button {
+        bottom: 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .events-list-picture {
         width: 421px;
+        height: 277px;
+        object-fit: none;
     }
 
     .swiper-slide {
         width: 421px;
+        
     }
 }
