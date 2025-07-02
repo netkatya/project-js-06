@@ -5,19 +5,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const swiper = new Swiper('.swiper', {
+const swiperFeedback = new Swiper('.swiper-feedback', {
   modules: [Navigation, Pagination],
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 20,
   pagination: {
-    el: '.my-pagination',
+    el: '.my-pagination-feedback',
     clickable: true,
   },
   navigation: {
-    nextEl: '.button-next',
-      prevEl: '.button-prev',
-      disabledClass: 'disabled'
+    nextEl: '.button-next-feedback',
+      prevEl: '.button-prev-feedback',
+      disabledClass: 'disabled-feedback'
     },
     breakpoints: {
         768: {

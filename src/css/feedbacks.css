@@ -16,25 +16,26 @@
   line-height: 150%;
   margin-bottom: 80px;
 }
-.swiper {
+.swiper-feedback {
+  margin: 0px;
   width: 341px;
   height: 314px;
 }
-.swiper-container {
+.swiper-container-feedback {
   margin-bottom: 32px;
 }
-.swiper-wrapper {
+.wrapper-feedback {
   padding: 0;
   margin: 0;
 }
-.swiper-slide {
+.slide-feedback {
   display: block;
   border: 1px solid rgba(11, 5, 0, 0.15);
   border-radius: 16px;
   padding: 32px;
   width: 341px;
 }
-.swiper-text {
+.swiper-text-feedback {
   width: 277px;
   height: 108px;
   font-weight: 400;
@@ -42,26 +43,26 @@
   line-height: 150%;
   margin-bottom: 24px;
 }
-.swiper-name {
+.swiper-name-feedback {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
 }
-.swiper-image {
+.swiper-image-feedback {
   height: 48px;
   border-radius: 100%;
   object-fit: cover;
 }
-.swiper-reader {
+.swiper-reader-feedback {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
 }
-.swiper-user {
+.swiper-user-feedback {
   display: flex;
   gap: 16px;
 }
-.swiper-button {
+.swiper-button-feedback {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -75,27 +76,27 @@
   transition: fill 0.25s ease-in-out;
 }
 
-.swiper-button.disabled {
+.swiper-button-feedback.disabled-feedback {
   opacity: 0.2;
   fill: black;
   cursor: not-allowed;
   pointer-events: none;
 }
-.swiper-button:active {
+.swiper-button-feedback:active {
   background: #5a2502;
   fill: white;
 }
-.controls {
+.controls-feedback {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.my-buttons {
+.my-buttons-feedback {
   display: flex;
   gap: 16px;
 }
 @media screen and (min-width: 768px) {
-  .swiper {
+  .swiper-feedback {
     width: 705px;
     height: 244px;
   }
@@ -107,15 +108,15 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .swiper {
+  .swiper-feedback {
     width: 1263px;
     height: 217px;
   }
-  .swiper-text {
+  .swiper-text-feedback {
     width: 357px;
     height: 81px;
   }
-  .swiper-button:hover {
+  .swiper-button-feedback:hover {
     fill: black;
     background: transparent;
   }
