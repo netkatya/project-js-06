@@ -3,21 +3,17 @@
 }
 .feedbacks-heading {
   max-width: 375px;
-  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 36px;
   line-height: 120%;
   letter-spacing: -0.01em;
-  color: #0b0500;
   margin-bottom: 24px;
 }
 .feedbacks-text {
   width: 343px;
-  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #0b0500;
   margin-bottom: 80px;
 }
 .swiper {
@@ -44,14 +40,12 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #0b0500;
   margin-bottom: 24px;
 }
 .swiper-name {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  color: #0b0500;
 }
 .swiper-image {
   height: 48px;
@@ -62,7 +56,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #0b0500;
 }
 .swiper-user {
   display: flex;
