@@ -26,12 +26,18 @@
     margin-bottom: 32px;
 }
 
-
+.swiper-slide {
+    position: relative;
+    height: 545px;
+}
 
 .events-list-picture {
-    max-width: 342px;
+    height: 342px;
     height: 277px;
+    object-fit: cover;
+    border-radius: 16px;
 }
+
 .events-list-header {
     font-weight: 400;
     font-size: 24px;
@@ -51,7 +57,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 16px;
 }
 
 .events-list-button {
@@ -63,6 +68,11 @@
     height: 24px;
     background-color: inherit;
     display: flex;
+    margin-top: auto;
+    padding-left: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
 }
 
 .events-list-button-arrow {
@@ -79,8 +89,6 @@
     .swiper-slide {
         width: 340px;
     }
-
-   
 }
 
 @media screen and (min-width: 1440px) {
