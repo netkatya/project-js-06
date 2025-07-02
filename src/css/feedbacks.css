@@ -1,0 +1,128 @@
+.feedbacks {
+  padding: 64px 0px;
+}
+.feedbacks-heading {
+  max-width: 375px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #0b0500;
+  margin-bottom: 24px;
+}
+.feedbacks-text {
+  width: 343px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0b0500;
+  margin-bottom: 80px;
+}
+.swiper {
+  width: 341px;
+  height: 314px;
+}
+.swiper-container {
+  margin-bottom: 32px;
+}
+.swiper-wrapper {
+  padding: 0;
+  margin: 0;
+}
+.swiper-slide {
+  display: block;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  border-radius: 16px;
+  padding: 32px;
+  width: 341px;
+}
+.swiper-text {
+  width: 277px;
+  height: 108px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0b0500;
+  margin-bottom: 24px;
+}
+.swiper-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0b0500;
+}
+.swiper-image {
+  height: 48px;
+  border-radius: 100%;
+}
+.swiper-reader {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0b0500;
+}
+.swiper-user {
+  display: flex;
+  gap: 16px;
+}
+.swiper-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background: #e15d05;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  fill: white;
+  transition: background 0.25s ease-in-out;
+  transition: fill 0.25s ease-in-out;
+}
+
+.swiper-button.disabled {
+  opacity: 0.2;
+  fill: black;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.swiper-button:active {
+  background: #5a2502;
+  fill: white;
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.my-buttons {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 705px;
+    height: 244px;
+  }
+  .feedbacks-heading {
+    max-width: 768px;
+  }
+  .feedbacks-text {
+    max-width: 786px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .swiper {
+    width: 1263px;
+    height: 217px;
+  }
+  .swiper-text {
+    width: 357px;
+    height: 81px;
+  }
+  .swiper-button:hover {
+    fill: black;
+    background: transparent;
+  }
+}
