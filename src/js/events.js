@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Init Swiper
-const swiper = new Swiper('.swiper', {
+const swiperEvents = new Swiper('.swiper', {
     modules: [Navigation, Pagination],
     loop: false,
     spaceBetween: 20,
