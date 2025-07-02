@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   background-color: #FCEEE6;
   color: #0B0500;
   display: flex;
@@ -10,6 +11,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 
