@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: "Rubik", sans-serif;
   background-color: #FCEEE6;
   color: #0B0500;
   display: flex;
