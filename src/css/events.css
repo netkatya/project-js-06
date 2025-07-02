@@ -88,7 +88,7 @@
     fill: #0B0500;
 }
 /* swiper */
-.swiper-tools {
+/* .swiper-tools {
     display: flex;
 }
 
@@ -117,7 +117,7 @@
     height: 48px;
     padding: 12px;
     background-color: #E15D05;
-}
+} */
 
 @media screen and (min-width: 768px) {
     .swiper-wrapper {
