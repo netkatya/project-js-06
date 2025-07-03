@@ -1,11 +1,13 @@
 :root {
-  --font-family: "Rubik", sans-serif;
+  --font-family: 'Rubik', sans-serif;
 }
 
 body {
+
   font-family: "Rubik", sans-serif;
   background-color: #FCEEE6;
   color: #0B0500;
+>>>>>>> 3af9defe44dd25283942afc26954ff51b53a09d9
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -13,5 +15,3 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
-
-
