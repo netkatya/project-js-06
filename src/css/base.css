@@ -1,15 +1,13 @@
 :root {
-  --font-family: "Rubik", sans-serif;
+  --font-family: 'Rubik', sans-serif;
 }
 
 body {
-  background-color: #FCEEE6;
-  color: #0B0500;
+  background-color: #fceee6;
+  color: #0b0500;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
 }
-
-

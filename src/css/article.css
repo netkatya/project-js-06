@@ -4,7 +4,6 @@
 .container {
 }
 .article-cont {
-  margin: 0 auto;
   max-width: 343px;
 }
 .article-title {
@@ -32,7 +31,7 @@
 }
 @media screen and (min-width: 768px) {
   .article-cont {
-    max-width: 670px;
+    max-width: 704px;
   }
 
   .article-img {
@@ -47,7 +46,7 @@
     gap: 32px;
   }
   .article-cont {
-    max-width: 600px;
+    max-width: 640px;
   }
   .article-title {
     font-size: 40px;
