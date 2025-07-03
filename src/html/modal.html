@@ -1,0 +1,39 @@
+<div class="events-modal-overlay">
+  <div class="events-modal">
+    <button type="button" class="events-close-button">
+      <svg>
+        <use href="/img/icon.svg#icon-cross" width="16" height="16"></use>
+      </svg>
+    </button>
+    <h2 class="events-modal-header">Register</h2>
+    <p class="events-modal-text"></p>
+    <form class="modal-form">
+      <label for="events-name" class="events-form-label events-name-label"
+        >Name*<input
+          id="events-name"
+          type="text"
+          name="events-name"
+          class="events-form-input events-name-input"
+          required
+      /></label>
+      <label for="events-email" class="events-form-label events-name-label"
+        >Email*<input
+          id="events-email"
+          type="email"
+          name="events-email"
+          required
+          class="events-form-input events-email-input"
+      /></label>
+      <label for="events-text" class="events-form-label events-text-label"
+        >Message
+        <textarea
+          id="events-text"
+          name="events-text"
+          class="events-text-input"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="events-modal-button">Register</button>
+    </form>
+  </div>
+</div>
