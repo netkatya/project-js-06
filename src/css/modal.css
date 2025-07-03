@@ -21,6 +21,8 @@
     height: 794px;
     background-color: #FCEEE6;
     position: relative;
+    top: 5px;
+    left: 9px;
 }
 
 .events-close-button {
@@ -101,4 +103,44 @@
     width: 311px;
     height: 48px;
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .events-modal {
+        padding: 64px 32px;
+        width: 704px;
+        height: 760px;
+        left: 10px;
+    }
+
+    .events-form-input {
+        width: 640px;      
+    }
+
+    .events-text-input {
+        width: 640px;
+    }
+
+    .events-modal-button {
+        width: 342px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .events-modal {
+        padding: 64px;
+    }
+
+    .events-modal {
+        width: 866px;
+    }
+
+    .events-form-input {
+        width: 738px;
+    }
+    
+    .events-text-input {
+        width: 738px;
+    }
 }
