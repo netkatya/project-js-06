@@ -1,0 +1,122 @@
+.feedbacks {
+  padding: 64px 0px;
+}
+.feedbacks-heading {
+  max-width: 375px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+.feedbacks-text {
+  width: 343px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 80px;
+}
+.feedbacks .swiper {
+  margin: 0px;
+  width: 341px;
+  height: 314px;
+}
+.swiper-container-feedback {
+  margin-bottom: 32px;
+}
+.wrapper-feedback {
+  padding: 0;
+  margin: 0;
+}
+.slide-feedback {
+  display: block;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  border-radius: 16px;
+  padding: 32px;
+  width: 341px;
+}
+.swiper-text-feedback {
+  width: 277px;
+  height: 108px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+.swiper-name-feedback {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.swiper-image-feedback {
+  height: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.swiper-reader-feedback {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.swiper-user-feedback {
+  display: flex;
+  gap: 16px;
+}
+.swiper-button {
+  background-color: transparent;
+  cursor: pointer;
+  background: #e15d05;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  fill: white;
+  transition: background 0.25s ease-in-out;
+  transition: fill 0.25s ease-in-out;
+}
+
+.swiper-button.disabled {
+  opacity: 0.2;
+  fill: black;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.swiper-button:active {
+  background: #5a2502;
+  fill: white;
+}
+.controls-for-swiper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buttons-for-swiper {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .feedbacks .swiper {
+    width: 705px;
+    height: 244px;
+  }
+  .feedbacks-heading {
+    max-width: 768px;
+  }
+  .feedbacks-text {
+    max-width: 786px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feedbacks .swiper {
+    width: 1311px;
+    height: 217px;
+  }
+  .swiper-text-feedback {
+    width: 357px;
+    height: 81px;
+  }
+  .swiper-button:hover {
+    fill: black;
+    background: transparent;
+  }
+}
