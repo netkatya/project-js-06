@@ -10,12 +10,12 @@ const swiperEvents = new Swiper('.events .swiper', {
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
-    nextEl: '.events .button-next-feedback',
-    prevEl: '.events .button-prev-feedback',
-    disabledClass: 'disabled-feedback',
+    nextEl: '.events .button-next',
+    prevEl: '.events .button-prev',
+    disabledClass: 'disabled',
   },
   pagination: {
-    el: '.events .my-pagination-feedback',
+    el: '.events .pagination-for-swiper',
     clickable: true,
   },
   breakpoints: {
@@ -24,7 +24,7 @@ const swiperEvents = new Swiper('.events .swiper', {
       spaceBetween: 24,
     },
     1024: {
-      enabled: false, // 👈 Отключить Swiper на десктопе
+      enabled: false,
     },
   },
 });
