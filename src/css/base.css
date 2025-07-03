@@ -3,11 +3,15 @@
 }
 
 body {
-  background-color: #fceee6;
-  color: #0b0500;
+
+  font-family: "Rubik", sans-serif;
+  background-color: #FCEEE6;
+  color: #0B0500;
+>>>>>>> 3af9defe44dd25283942afc26954ff51b53a09d9
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  scroll-behavior: smooth;
 }
