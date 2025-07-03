@@ -16,7 +16,7 @@
   line-height: 150%;
   margin-bottom: 80px;
 }
-.swiper-feedback {
+.feedbacks .swiper {
   margin: 0px;
   width: 341px;
   height: 314px;
@@ -62,8 +62,7 @@
   display: flex;
   gap: 16px;
 }
-.swiper-button-feedback {
-  border: none;
+.swiper-button {
   background-color: transparent;
   cursor: pointer;
   background: #e15d05;
@@ -76,27 +75,27 @@
   transition: fill 0.25s ease-in-out;
 }
 
-.swiper-button-feedback.disabled-feedback {
+.swiper-button.disabled {
   opacity: 0.2;
   fill: black;
   cursor: not-allowed;
   pointer-events: none;
 }
-.swiper-button-feedback:active {
+.swiper-button:active {
   background: #5a2502;
   fill: white;
 }
-.controls-feedback {
+.controls-for-swiper {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.my-buttons-feedback {
+.buttons-for-swiper {
   display: flex;
   gap: 16px;
 }
 @media screen and (min-width: 768px) {
-  .swiper-feedback {
+  .feedbacks .swiper {
     width: 705px;
     height: 244px;
   }
@@ -108,7 +107,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .swiper-feedback {
+  .feedbacks .swiper {
     width: 1311px;
     height: 217px;
   }
@@ -116,7 +115,7 @@
     width: 357px;
     height: 81px;
   }
-  .swiper-button-feedback:hover {
+  .swiper-button:hover {
     fill: black;
     background: transparent;
   }

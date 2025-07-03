@@ -5,17 +5,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // FEEDBACK Swiper (section: feedbacks)
-const swiperFeedback = new Swiper('.swiper-feedback', {
+const swiperFeedback = new Swiper('.feedbacks .swiper', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
-    nextEl: '.feedbacks .button-next-feedback',
-    prevEl: '.feedbacks .button-prev-feedback',
-    disabledClass: 'disabled-feedback',
+    nextEl: '.feedbacks .button-next',
+    prevEl: '.feedbacks .button-prev',
+    disabledClass: 'disabled',
   },
   pagination: {
-    el: '.feedbacks .my-pagination-feedback',
+    el: '.feedbacks .pagination-for-swiper',
     clickable: true,
   },
   breakpoints: {
