@@ -1,0 +1,86 @@
+.books-modal {
+    border-radius: 16px;
+    padding: 64px 16px;
+    width: 343px;
+    background: #FCEEE6;
+}
+
+.books-modal-header {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
+
+.books-modal-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.books-modal-price {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+}
+
+.quantity-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.quantity-button {
+    border: 1px solid #0b0500;
+    border-radius: 4px;
+    padding: 8px 20px;
+    width: 32px;
+    height: 40px;
+}
+
+.quantity-buttons-input {
+    border-radius: 8px;
+    width: 42px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.books-modal-add-button {
+    border: 1px solid #e15d05;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 311px;
+    height: 48px;
+    background-color: #e15d05;
+    margin-bottom: 24px;
+}
+.books-modal-buy-button {
+    border: 1px solid #0b0500;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 311px;
+    height: 48px;
+    margin-bottom: 32px;
+}
+
+.ac-header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.ac-button {
+    width: 24px;
+    height: 25px;
+    border: none;
+    background-color: inherit;
+}
+
+.ac-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
