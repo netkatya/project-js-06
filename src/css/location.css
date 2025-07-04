@@ -1,0 +1,70 @@
+.location {
+}
+.loc-fine {
+  padding-bottom: 40px;
+}
+.loc-txt {
+}
+
+.loc-h {
+  width: 343px;
+  height: 58px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0500;
+  margin-bottom: 24px;
+}
+.loc-one {
+  width: 69px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #0b0500;
+  margin-bottom: 16px;
+}
+.loc-two {
+  width: 343px;
+  height: 81px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0500;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 32px;
+
+  width: 343px;
+  height: 244px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+
+  width: 343px;
+  height: 60px;
+}
+.loc-email {
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #0b0500;
+}
