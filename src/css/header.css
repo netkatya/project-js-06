@@ -14,6 +14,7 @@ html {
   z-index: 999;
   padding-top: 14px;
   padding-bottom: 14px;
+  background-color: #FCEEE6;
 }
 .header-container {
   display: flex;
@@ -128,9 +129,12 @@ html {
     gap: 32px;
     align-items: center;
   }
+
+    .header-nav-list-item:hover,
+    .header-nav-list-item:focus {
+      color: #ea8d50;
+    }
 }
 @media screen and (min-width: 1440px) {
-  .header-nav-list-item:hover {
-    color: #ea8d50;
-  }
+
 }
