@@ -124,7 +124,8 @@ body.category-modal-overlay {
 
 .category-modal {
   position: relative;
-  top: -286px;
+  /* top: -286px; */
+  top: 105px;
   width: 343px;
   height: 296px;
   background-color: #fceee6;
@@ -337,7 +338,8 @@ body.category-modal-overlay {
   .category-modal {
     width: 249px;
     height: 338px;
-    top: -295px;
+    /* top: -295px; */
+    top: 105px;
     left: 227px;
     background-color: #fceee6;
   }

@@ -28,7 +28,12 @@ if (window.innerWidth >= 1440) {
 export async function loadCategoryList() {
   try {
     let categories = await getCategoryList();
-    categories = [{ list_name: 'All categories' }, ...categories];
+    console.log(categories, categories.length);
+
+    categories = [{ list_name: 'All categories' }, ...categories].filter(
+      ({ list_name }) => list_name.trim() != ''
+    );
+    console.log(categories, categories.length);
     renderCategories(categories);
   } catch (error) {
     showErrorMsg(error);
