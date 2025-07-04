@@ -145,6 +145,10 @@ export function renderBooks(arrBooks, append = false) {
 
 export function toggleDropdown() {
   booksRefs.dropdown.classList.toggle('is-open');
+  const rect = booksRefs.categoryBox.getBoundingClientRect();
+  booksRefs.dropdownList.style.top = `${rect.bottom + window.scrollY}px`;
+
+  document.body.classList.add('modal-open'); // scroll blocked
 }
 
 export function resetNumeration() {
@@ -180,13 +184,18 @@ function scrollAfterNewImages() {
   }
 }
 
+export function closeCategoryList() {
+  booksRefs.dropdown.classList.remove('is-open');
+  document.body.classList.remove('modal-open'); // scroll enabled
+}
+
 export function dropdownListOnClick(event) {
   if (!event.target.classList.contains('categories__item')) {
     return;
   }
 
   if (window.innerWidth < 1440) {
-    booksRefs.dropdown.classList.remove('is-open');
+    closeCategoryList();
   }
 
   const selectedCategory = event.target;

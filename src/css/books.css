@@ -118,13 +118,11 @@
 }
 
 body.category-modal-overlay {
-  overflow: hidden;
   height: 100%;
 }
 
 .category-modal {
   position: relative;
-  /* top: -286px; */
   top: 105px;
   width: 343px;
   height: 296px;

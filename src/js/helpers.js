@@ -2,6 +2,7 @@
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { getCategoryList } from './api';
 
 iziToast.settings({
   position: 'topRight',
@@ -18,6 +19,7 @@ export const booksRefs = {
     '.books-section-subheader-summary'
   ),
   loader: document.querySelector('.loader'),
+  categoryBox: document.querySelector('.books-category-box'),
 };
 
 export function showErrorMsg(msg) {
