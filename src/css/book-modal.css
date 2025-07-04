@@ -101,6 +101,14 @@
     line-height: 150%;
 }
 
+.books-ac-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: solid 1px;
+}
+
 .ac-button {
     width: 24px;
     height: 25px;
@@ -115,5 +123,6 @@
 }
 
 .books-ac {
-    background-color: #FCEEE6;
+    border-top: #0b0500;
+
 }
