@@ -94,6 +94,7 @@
     margin-top: 8px;
     padding: 8px 12px;
     color: rgba(11, 5, 0, 0.6);
+    resize: none;
 }
 
 .events-text-input:focus {
