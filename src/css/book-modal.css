@@ -122,7 +122,19 @@
     line-height: 150%;
 }
 
-.books-ac {
+.ac-header .books-ac-header {
     border-top: #0b0500;
+    border-bottom: #0b0500;
+   
 
 }
+
+
+
+.books-modal,
+.books-ac,
+.books-ac-header,
+.ac-panel {
+    background-color: #FCEEE6;
+}
+
