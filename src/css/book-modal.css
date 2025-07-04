@@ -2,10 +2,9 @@
     border-radius: 16px;
     padding: 64px 16px;
     width: 343px;
+    margin: auto;
     background: #FCEEE6;
-    position: absolute;
-    left: 50px;
-    top: 50px;
+
 }
 
 .books-modal-header {
@@ -72,7 +71,7 @@
     margin: 0;
 }
 
-/* Firefox */
+
 .quantity-buttons-input[type=number] {
     -moz-appearance: textfield;
 }
@@ -85,6 +84,10 @@
     height: 48px;
     background-color: #e15d05;
     margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
 }
 .books-modal-buy-button {
     border: 1px solid #0b0500;
@@ -109,6 +112,8 @@
     border-bottom: solid 1px;
 }
 
+
+
 .ac-button {
     width: 24px;
     height: 25px;
@@ -122,14 +127,6 @@
     line-height: 150%;
 }
 
-.ac-header .books-ac-header {
-    border-top: #0b0500;
-    border-bottom: #0b0500;
-   
-
-}
-
-
 
 .books-modal,
 .books-ac,
@@ -138,3 +135,86 @@
     background-color: #FCEEE6;
 }
 
+.ac-panel {
+    /* display: none; */
+
+}
+
+
+
+.ac {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important; 
+}
+
+.ac-header {
+    background: none !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+
+.ac-trigger::before {
+    display: none !important;
+    content: none !important;
+}
+
+
+.ac-trigger {
+    padding: 0 !important;
+    font-weight: normal;
+   
+    background: none !important;
+    border: none !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ac-panel {
+    padding: 0 !important;
+    background: none !important; 
+}
+
+.ac-trigger::before,
+.ac-trigger::after {
+    display: none !important;
+    content: none !important;
+}
+
+
+.ac-trigger {
+    background-image: none !important;
+}
+
+.ac.is-active .ac-button {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease; 
+}
+
+.books-ac-header {
+    border-top: 1px solid rgba(11, 5, 0, 0.15) !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+/* .books-ac-header.last {
+    border-bottom: 1px solid rgba(11, 5, 0, 0.15) !important;
+    padding-bottom: 20px !important;
+} */
+
+.ac-trigger {
+    display: flex !important;
+}
+
+.ac-button {
+    margin-left: auto;
+}
+
+.ac-panel {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0; 
+}
