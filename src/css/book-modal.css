@@ -10,12 +10,14 @@
     font-size: 40px;
     line-height: 120%;
     letter-spacing: -0.01em;
+    margin-bottom: 8px;
 }
 
 .books-modal-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+    margin-bottom: 8px;
 }
 
 .books-modal-price {
@@ -23,6 +25,7 @@
     font-size: 24px;
     line-height: 140%;
     letter-spacing: -0.01em;
+    margin-bottom: 24px;
 }
 
 .quantity-buttons {
@@ -30,22 +33,34 @@
     gap: 8px;
 }
 
+.quantity-buttons {
+    margin-bottom: 16px;
+
+}
+
 .quantity-button {
     border: 1px solid #0b0500;
     border-radius: 4px;
-    padding: 8px 20px;
-    width: 32px;
+    
+    min-width: 32px;
     height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+   
 }
 
 .quantity-buttons-input {
-    border-radius: 8px;
+    border: 1px solid rgba(11, 5, 0, 0.15);
+    border-radius: 4px;
+    padding: 8px 12px;
     width: 42px;
     height: 40px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
+    background: rgba(11, 5, 0, 0.05);
 }
 
 .books-modal-add-button {
