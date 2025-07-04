@@ -19,13 +19,15 @@ function openModal(eventName) {
 
 function closeModal() {
     eventModal.classList.remove("is-open");
-    document.body.classList.remove("modal-open"); // scroll deblocked
+    document.body.classList.remove("modal-open");
     document.documentElement.classList.remove("modal-open");
-
+  
     document.body.style.position = '';
-    document.body.style.top = '';
     document.body.style.width = '';
-    window.scrollTo(0, scrollTop);
+  
+    const scrollY = parseInt(document.body.style.top || '0') * -1;
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY);
 }
 
 // Закриття по кліку на backdrop
