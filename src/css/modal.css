@@ -1,5 +1,6 @@
 .events-modal-overlay {
     opacity: 0;
+    visibility: hidden;
     background: rgba(0, 0, 0, 0.25);
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@
 
 .is-open {
     opacity: 1;
+    visibility: visible;
 }
 
 .events-modal {
@@ -148,3 +150,10 @@
         width: 738px;
     }
 }
+
+.modal-open {
+    overflow: hidden; 
+}
+
+
+
