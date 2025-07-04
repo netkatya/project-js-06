@@ -13,7 +13,7 @@ function openModal(eventName) {
     document.body.classList.add("modal-open"); // scroll blocked
     document.documentElement.classList.add("modal-open");
     document.body.style.top = `-${scrollTop}px`;
-    document.body.style.position = 'fixed';
+    // document.body.style.position = 'fixed';
     document.body.style.width = '100%';
   }
 
