@@ -3,6 +3,9 @@
     padding: 64px 16px;
     width: 343px;
     background: #FCEEE6;
+    position: absolute;
+    left: 50px;
+    top: 50px;
 }
 
 .books-modal-header {
@@ -63,6 +66,17 @@
     background: rgba(11, 5, 0, 0.05);
 }
 
+.quantity-buttons-input[type=number]::-webkit-outer-spin-button,
+.quantity-buttons-input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.quantity-buttons-input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .books-modal-add-button {
     border: 1px solid #e15d05;
     border-radius: 4px;
@@ -98,4 +112,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+}
+
+.books-ac {
+    background-color: #FCEEE6;
 }
