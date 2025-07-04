@@ -27,7 +27,7 @@
     margin-bottom: 32px;
 }
 
-.events-slide {
+.events-swiper-slide {
     height: 545px;
 }
 
@@ -101,7 +101,7 @@
         gap: 24px;
     }
 
-    .events-slide {
+    .events-swiper-slide {
         width: 340px;
     }
 
@@ -124,7 +124,7 @@
         object-fit: none;
     }
 
-    .swiper-slide {
+    .events-swiper-slide {
         max-width: 421px;
     }
 }
