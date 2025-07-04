@@ -7,12 +7,21 @@ html {
   scroll-behavior: smooth;
 }
 .header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
+}
+.header-logo {
+  display: block;
+  height: 36px;
 }
 .header-nav-list {
   display: none;
@@ -88,6 +97,9 @@ html {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .burger-btn {
+    display: none;
+  }
   .mobile-menu {
     display: none;
   }
@@ -100,6 +112,7 @@ html {
   .header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header-nav-list-item {
     font-weight: 400;
