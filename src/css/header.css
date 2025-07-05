@@ -68,6 +68,7 @@ html {
   background-color: transparent;
   cursor: pointer;
 }
+
 .mobile-menu-nav-list {
   display: flex;
   flex-direction: column;
