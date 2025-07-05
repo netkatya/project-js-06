@@ -21,8 +21,11 @@ loadBooksList();
 booksRefs.dropdownBtn.addEventListener('click', toggleDropdown);
 booksRefs.dropdownList.addEventListener('click', dropdownListOnClick);
 booksRefs.loadMoreBtn.addEventListener('click', loadMoreBtnOnClick);
-booksRefs.goToTopBtn.addEventListener('click', goToTopBtnOnClick);
 booksRefs.booksList.addEventListener('click', booksListOnClick);
+
+// katya
+goToTopBtnOnClick(booksRefs.goToTopBtn);
+// katya
 
 booksRefs.dropdown.addEventListener('click', event => {
   if (event.target === booksRefs.dropdown) {

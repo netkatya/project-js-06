@@ -102,9 +102,29 @@ export function loadMoreBtnOnClick(event) {
     hideLoader();
   }, 500);
 }
-export function goToTopBtnOnClick(event) {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+// katya
+export function goToTopBtnOnClick(goToTopBtn) {
+  if (!goToTopBtn) return;
+
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      goToTopBtn.classList.remove('visually-hidden');
+    } else {
+      goToTopBtn.classList.add('visually-hidden');
+    }
+  };
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  goToTopBtn.addEventListener('click', handleClick);
+
+  handleScroll();
 }
+// katya
 
 export function renderBooks(arrBooks, append = false) {
   let startIndex;

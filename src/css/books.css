@@ -189,6 +189,7 @@ body.category-modal-overlay {
   transition: background-color 0.25s ease-in-out;
 }
 
+
 .books-list-load-more.books-main-btn {
   width: 302px;
 }
@@ -231,13 +232,24 @@ body.category-modal-overlay {
   color: #fff;
 }
 
+.books-list-go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 250ms ease, transform 200ms ease;
+  z-index: 1000;
+}
+
 .go-top-icon {
   fill: #fff;
 }
 
+
 .books-list-go-top.books-main-btn:hover,
 .books-list-go-top.books-main-btn:focus {
   background-color: #fceee6;
+  transform: scale(1.1);
   .go-top-icon {
     fill: #0b0500;
   }
