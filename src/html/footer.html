@@ -5,15 +5,14 @@
         <div class="footer-logo">
           <a href="index.html">
             <svg width="83" height="21">
-            <use href="/src/img/icon.svg#icon-logo"></use>
+            <use href="/img/icon.svg#icon-logo"></use>
             /svg>
           </a>
         </div>
-    
         <nav class="footer-nav">
           <a href="#">Home</a>
-          <a href="#">Books</a>
-          <a href="#">Feedback</a>
+          <a href="#books">Books</a>
+          <a href="#section-feedbacks">Feedback</a>
           <a href="#">Location</a>
         </nav>
       </div>
@@ -28,6 +27,7 @@
       class="subscribe-input"
       placeholder="Enter your email"
       required
+      pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
     />
     <button type="submit" class="subscribe-button">Sign Up</button>
   </form>
