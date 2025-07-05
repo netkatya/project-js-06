@@ -44,17 +44,7 @@ img {
   overflow: hidden;
 }
 
-body.modal-open {
-  padding-right: 17px;
-}
 
-body.modal-open .events-modal-overlay {
-  padding-right: 17px;
-}
-
-body.modal-open .header {
-  padding-right: 17px;
-}
 
 
 
