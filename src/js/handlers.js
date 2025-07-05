@@ -79,7 +79,11 @@ function handleBooks(books, append) {
 
     if (page >= totalPages) {
       hideLoadMoreButton();
-      showInfoMsg("We're sorry, but you've reached the end of search results.");
+      if (totalPages > 1) {
+        showInfoMsg(
+          "We're sorry, but you've reached the end of search results."
+        );
+      }
     } else {
       showLoadMoreButton();
     }
@@ -165,8 +169,12 @@ export function renderBooks(arrBooks, append = false) {
 
 export function toggleDropdown() {
   booksRefs.dropdown.classList.toggle('is-open');
+
   const rect = booksRefs.categoryBox.getBoundingClientRect();
-  booksRefs.dropdownList.style.top = `${rect.bottom + window.scrollY}px`;
+  booksRefs.categoryModal.style.position = 'absolute';
+  booksRefs.categoryModal.style.top = `${rect.bottom + 4}px`;
+  booksRefs.categoryModal.style.left = `${rect.left}px`;
+  booksRefs.categoryModal.style.display = 'block';
 
   document.body.classList.add('modal-open'); // scroll blocked
 }
@@ -207,6 +215,11 @@ function scrollAfterNewImages() {
 export function closeCategoryList() {
   booksRefs.dropdown.classList.remove('is-open');
   document.body.classList.remove('modal-open'); // scroll enabled
+
+  booksRefs.categoryModal.style.position = '';
+  booksRefs.categoryModal.style.top = '';
+  booksRefs.categoryModal.style.left = '';
+  booksRefs.categoryModal.style.display = '';
 }
 
 export function dropdownListOnClick(event) {
