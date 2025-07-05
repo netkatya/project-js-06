@@ -1,14 +1,11 @@
 body.no-scroll {
   overflow: hidden;
-  position: fixed;
-  width: 100%;
+  /* position: fixed; */
 }
-html {
-  scroll-behavior: smooth;
-}
+
 .header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 999;
@@ -331,8 +328,8 @@ html {
   pointer-events: none;
   transform: translate(100%);
   background-color: inherit;
-  transition: transform 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .mobile-menu.is-open {
@@ -361,6 +358,7 @@ html {
   background-color: transparent;
   cursor: pointer;
 }
+
 .mobile-menu-nav-list {
   display: flex;
   flex-direction: column;
@@ -376,6 +374,7 @@ html {
 .mobile-menu-nav-item:active {
   color: #ea8d50;
 }
+
 @media screen and (min-width: 768px) {
   .switch1 {
     display: block;

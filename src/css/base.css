@@ -2,6 +2,10 @@
   --font-family: 'Rubik', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #FCEEE6;
@@ -11,5 +15,5 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  
+
 }
