@@ -1,7 +1,9 @@
 .location {
+  padding-top: 64px;
+  padding-bottom: 24px;
 }
 .loc-fine {
-  padding-bottom: 40px;
+  margin-bottom: 32px;
 }
 .loc-txt {
 }
@@ -34,16 +36,15 @@
   line-height: 1.5;
   color: #0b0500;
 }
-.contact-card {
+.loc-contact-card {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 32px;
-
+  margin-top: 32px;
   width: 343px;
   height: 244px;
 }
-.contact-item {
+.loc-contact-item {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -53,9 +54,11 @@
   width: 343px;
   height: 60px;
 }
-.loc-email {
+.loc-map iframe {
+  width: 343px;
+  height: 395px;
 }
-.contact-text {
+.loc-contact-text {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -67,4 +70,49 @@
   line-height: 1.4;
   letter-spacing: -0.01em;
   color: #0b0500;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0b0500;
+}
+
+@media screen and (min-width: 768px) {
+  .loc-two {
+    width: 336px;
+    height: 108px;
+  }
+  .loc-fine {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .loc-contact-card {
+    width: 336px;
+    height: 244px;
+    margin-top: 8px;
+  }
+  .loc-map iframe {
+    width: 704px;
+    height: 395px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .loc-contact-card {
+    margin-left: 80px;
+  }
+  .loc-two {
+    width: 704px;
+  }
+  .loc-map iframe {
+    width: 1312px;
+    height: 738px;
+  }
 }
