@@ -1,227 +1,225 @@
 .hero {
-    padding-top: 72px;
+  padding-top: 72px;
 }
 
 .baner {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .baner-1 {
-    background-image: url(/img/hero/banner1-mob.png);
+  background-image: url(/img/hero/banner1-mob.png);
 }
 .baner-2 {
-    background-image: url(/img/hero/banner2-mob.png);
+  background-image: url(/img/hero/banner2-mob.png);
 }
 .baner-3 {
-    background-image: url(/img/hero/banner3-mob.png);
+  background-image: url(/img/hero/banner3-mob.png);
 }
 .baner-4 {
-    background-image: url(/img/hero/banner4-mob.png);
+  background-image: url(/img/hero/banner4-mob.png);
 }
 
 .slider-nav-icon {
-    fill: #0b0500;
+  fill: #0b0500;
 }
 
 .hero-text {
-    width: 700px;
-    padding-top: 90px;
-    padding-left: 16px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-    color: #fff;
-    margin-bottom: 16px;
+  width: 700px;
+  padding-top: 90px;
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 16px;
 }
 
 .hero-btn {
-     border: 0.52px solid #e15d05;
-     background-color: #e15d05;
-     display: block;
-     border-radius: 2px;
-     padding: 4px 10px;
-     width: 117px;
-     height: 20px;
-     text-align: center;
-     font-weight: 400;
-     font-size: 8px;
-     line-height: 1.5;
-     color: #fff; 
-     margin-bottom: 16px;   
-     margin-left: 16px;
+  border: 0.52px solid #e15d05;
+  background-color: #e15d05;
+  display: block;
+  border-radius: 2px;
+  padding: 4px 10px;
+  width: 117px;
+  height: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
+  margin-left: 16px;
 }
 
 .hero-content {
-    width: 343px;
-    margin-top: 24px;
-    margin-bottom: 32px;
+  width: 343px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 .hero-title {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: #0b0500;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .buttons-for-swiper.buttons-hero {
-    gap: 24px;
-    display: none;
+  gap: 24px;
+  display: none;
 }
 
 .text-tablet-mobile {
-    display: block;
+  display: block;
 }
 
-.hero-btn:hover, .hero-btn:focus {
-    background-color: #ea8d50;
-    border: 1px solid #0b0500;;
-    color: #0b0500;
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #ea8d50;
+  border: 1px solid #0b0500;
+  color: #0b0500;
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 2x) {
-   
-    .baner-1 {
-        background-image: url(/img/hero/banner1-mob@2x.png);
-    }
-    .baner-2 {
-        background-image: url(/img/hero/banner2-mob@2x.png);
-    }
-    .baner-3 {
-        background-image: url(/img/hero/banner3-mob@2x.png);
-    }
-    .baner-4 {
-        background-image: url(/img/hero/banner4-mob@2x.png);
-    }
+  .baner-1 {
+    background-image: url(/img/hero/banner1-mob@2x.png);
+  }
+  .baner-2 {
+    background-image: url(/img/hero/banner2-mob@2x.png);
+  }
+  .baner-3 {
+    background-image: url(/img/hero/banner3-mob@2x.png);
+  }
+  .baner-4 {
+    background-image: url(/img/hero/banner4-mob@2x.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .baner {
-        border-radius: 11px;
-    }
-    .hero-text {
-        padding-top: 118px;
-        padding-left: 40px;
-        font-size: 32px;
-        line-height: 1.2;
-      }
-          .hero-btn {
-            border: 1px solid #e15d05;
-            border-radius: 4px;
-            padding: 4px 20px;
-            width: 164px;
-            height: 32px;
-            font-size: 16px;
-            margin-bottom: 32px;
-            margin-left: 40px;  
-        }
-    .hero-content {
-        width: 560px;
-    }
-    .buttons-for-swiper.buttons-hero {
-        display: flex;
-    }
-        .hero-content-btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    .baner-1 {
-        background-image: url(/img/hero/banner1-tab.png);
-    }
-    .baner-2 {
-        background-image: url(/img/hero/banner2-tab.png);
-    }
-    .baner-3 {
-        background-image: url(/img/hero/banner3-tab.png);
-    }
-    .baner-4 {
-        background-image: url(/img/hero/banner4-tab.png);
-    }
+  .baner {
+    border-radius: 11px;
+  }
+  .hero-text {
+    padding-top: 118px;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .hero-btn {
+    border: 1px solid #e15d05;
+    border-radius: 4px;
+    padding: 4px 20px;
+    width: 164px;
+    height: 32px;
+    font-size: 16px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+  }
+  .hero-content {
+    width: 560px;
+  }
+  .buttons-for-swiper.buttons-hero {
+    display: flex;
+  }
+  .hero-content-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .baner-1 {
+    background-image: url(/img/hero/banner1-tab.png);
+  }
+  .baner-2 {
+    background-image: url(/img/hero/banner2-tab.png);
+  }
+  .baner-3 {
+    background-image: url(/img/hero/banner3-tab.png);
+  }
+  .baner-4 {
+    background-image: url(/img/hero/banner4-tab.png);
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
-    .baner-1 {
-            background-image: url(/img/hero/banner1-tab@2x.png);
-        }  
-        .baner-2 {
-            background-image: url(/img/hero/banner2-tab@2x.png);
-        }    
-        .baner-3 {
-            background-image: url(/img/hero/banner3-tab@2x.png);
-        } 
-        .baner-4 {
-            background-image: url(/img/hero/banner4-tab@2x.png);
-        }
+  .baner-1 {
+    background-image: url(/img/hero/banner1-tab@2x.png);
+  }
+  .baner-2 {
+    background-image: url(/img/hero/banner2-tab@2x.png);
+  }
+  .baner-3 {
+    background-image: url(/img/hero/banner3-tab@2x.png);
+  }
+  .baner-4 {
+    background-image: url(/img/hero/banner4-tab@2x.png);
+  }
 }
 
 @media screen and (min-width: 1440px) {
-        .baner {
-            border-radius: 16px;
-        }
+  .baner {
+    border-radius: 16px;
+  }
 
-        .hero-text {
-            padding-top: 155px;
-            padding-left: 56px;
-            font-size: 52px;    
-        }
+  .hero-text {
+    padding-top: 155px;
+    padding-left: 56px;
+    font-size: 52px;
+  }
 
-        .hero-btn {
-            border: 1px solid #e15d05;
-            padding: 8px 20px;
-            width: 227px;
-            height: 40px;
-            font-size: 16px;
-            margin-bottom: 56px;
-            margin-left: 56px;
-        }
+  .hero-btn {
+    border: 1px solid #e15d05;
+    padding: 8px 20px;
+    width: 227px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 56px;
+    margin-left: 56px;
+  }
 
-        .hero-content {
-            width: 1168px; 
-       }
+  .hero-content {
+    width: 1168px;
+  }
 
-        .hero-title {
-            font-size: 56px;
-        }
+  .hero-title {
+    font-size: 56px;
+  }
 
-        .text-tablet-mobile {
-            display: inline;
-        }
+  .text-tablet-mobile {
+    display: inline;
+  }
 
-        .text-desktop {
-            display: block;
-        }
+  .text-desktop {
+    display: block;
+  }
 
-        .baner-1 {
-            background-image: url(/img/hero/banner1-desk.png);
-        }   
-        .baner-2 {
-            background-image: url(/img/hero/banner2-desk.png);
-        }    
-        .baner-3 {
-            background-image: url(/img/hero/banner3-desk.png);
-        }
-        .baner-4 {
-            background-image: url(/img/hero/banner4-desk.png);
-        }
+  .baner-1 {
+    background-image: url(/img/hero/banner1-desk.png);
+  }
+  .baner-2 {
+    background-image: url(/img/hero/banner2-desk.png);
+  }
+  .baner-3 {
+    background-image: url(/img/hero/banner3-desk.png);
+  }
+  .baner-4 {
+    background-image: url(/img/hero/banner4-desk.png);
+  }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 2x) {
-    .baner-1 {
-            background-image: url(/img/hero/banner1-desk@2x.png);
-        }  
-        .baner-2 {
-            background-image: url(/img/hero/banner2-desk@2x.png);
-        }   
-        .baner-3 {
-            background-image: url(/img/hero/banner3-desk@2x.png);
-        }  
-        .baner-4 {
-            background-image: url(/img/hero/banner4-desk@2x.png);
-        }
+  .baner-1 {
+    background-image: url(/img/hero/banner1-desk@2x.png);
+  }
+  .baner-2 {
+    background-image: url(/img/hero/banner2-desk@2x.png);
+  }
+  .baner-3 {
+    background-image: url(/img/hero/banner3-desk@2x.png);
+  }
+  .baner-4 {
+    background-image: url(/img/hero/banner4-desk@2x.png);
+  }
 }

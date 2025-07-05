@@ -1,0 +1,38 @@
+.body-dark-theme {
+  background-color: #0b0500;
+  color: #fceee6;
+}
+.button-dark-theme {
+  color: #fceee6;
+}
+body.body-dark-theme button:hover {
+  background-color: #fceee6;
+  color: #0b0500;
+}
+body.body-dark-theme .slide-feedback {
+  border: 1px solid rgba(216, 203, 196, 0.15);
+}
+.body-dark-theme .header {
+  background-color: #0b0500;
+}
+.body-dark-theme .header-logo {
+  fill: #fceee6;
+}
+.body-dark-theme .header-burger {
+  fill: #fceee6;
+}
+.body-dark-theme .events-list-button {
+  background-color: #fceee6;
+}
+.body-dark-theme .swiper-pagination-bullet {
+  background-color: #fceee6;
+}
+.body-dark-theme .books-main-btn.books-transparent-btn {
+  background-color: #fceee6;
+}
+.body-dark-theme .books-main-btn.books-transparent-btn:hover,
+.books-main-btn.books-transparent-btn:focus {
+  background-color: #ea8d50;
+  border: 1px solid #0b0500;
+  color: #0b0500;
+}
