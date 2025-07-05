@@ -1,19 +1,11 @@
-.footer-wrapper {
-  align-self: stretch;
+.footer {
+  background: #EA8D50;
   padding: 80px 16px;
-  background:#EA8D50;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 80px;
 }
 
 .footer-content {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   gap: 32px;
 }
@@ -84,16 +76,19 @@
 
 
 .subscribe-input {
-  flex: 1 1 auto;
   min-width: 0;
-height: 48px;
+  height: 48px;
   padding: 8px 12px;
   border-radius: 4px;
   border: 1px solid rgba(11, 5, 0, 0.15);
   background-color: rgba(11, 5, 0, 0.05);
-  background: #fff;
   font-size: 16px;
   color: rgba(11, 5, 0, 0.6);
+  outline: none;
+}
+
+.subscribe-input:focus {
+  color: #0B0500;
 }
 
 .subscribe-button {
@@ -101,25 +96,22 @@ height: 48px;
   border-radius: 4px;
   height: 48px;
   border: 1px solid #0B0500;
-  background: transparent;
+  background: inherit;
   font-size: 16px;
   color: #0B0500;
-  cursor: pointer;
   flex-shrink: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: #fceee6;
-  color: #0B0500;
-  outline: 2px solid rgba(11, 5, 0, 0.4);
-  outline-offset: 2px;
+  border: 1px solid #0B0500;
 }
 
 .subscribe-button:active {
-  background-color: #dad9d8;
-  transform: scale(0.98);
+  background-color: #B44A04;
+
 }
 
 .subscribe-note {
@@ -134,6 +126,7 @@ height: 48px;
   align-items: center;
   gap: 32px;
   width: 100%;
+  margin-top: 80px;
 }
 
 .footer-divider {
@@ -193,14 +186,17 @@ footer hr {
   }
 
   .subscribe-input {
-    background: rgba(11, 5, 0, 0.05);
+    width: 278px;
+  }
+
+  .subscribe-note {
+    
   }
 
   .footer-bottom {
-  justify-content: flex-start;
   width: 640px;
   height: 53px;
-  margin: 0 auto;
+
 }
 }
 
