@@ -2,6 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import { booksRefs, showInfoMsg } from './helpers';
 
+
 // new Accordion('.accordion-container', {
 //   duration: 500,
 //   // showMultiple: true,
