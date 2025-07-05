@@ -21,6 +21,16 @@ export const booksRefs = {
   ),
   loader: document.querySelector('.loader'),
   categoryBox: document.querySelector('.books-category-box'),
+  bookModal: document.querySelector('.books-modal-overlay'),
+  bookImage: document.querySelector('.books-modal-picture'),
+  bookHeader: document.querySelector('.books-modal-header'),
+  bookAuthor: document.querySelector('.books-modal-text'),
+  bookPrice: document.querySelector('.books-modal-price'),
+  divBookModal: document.querySelector('div.books-modal'),
+  bookDetails: document.querySelector('.ac-text.details'),
+  bookQuantity: document.querySelector('.quantity-buttons-input'),
+  bookShipping: document.querySelector('.ac-text.shipping'),
+  bookReturns: document.querySelector('.ac-text.returns'),
 };
 
 export function showErrorMsg(msg) {
@@ -50,4 +60,8 @@ export function showLoadMoreButton() {
 
 export function hideLoadMoreButton() {
   booksRefs.loadMoreBtn.style.display = 'none';
+}
+
+export function showBookModal() {
+  booksRefs.bookModal.classList.add('is-open');
 }
