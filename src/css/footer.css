@@ -1,1 +1,154 @@
+.footer-wrapper {
+  align-self: stretch;
+  padding: 80px 16px;
+  background:#EA8D50;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+}
 
+.footer-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-top-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+.footer-column {
+  width: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.footer-logo {
+  width: 83px;
+  height: 21px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color:#0B0500;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.subscribe-title {
+  
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color:#0B0500;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap; 
+}
+
+
+.subscribe-input {
+  flex: 1 1 auto;
+  min-width: 0;
+height: 48px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  background-color: rgba(11, 5, 0, 0.05);
+  background: #fff;
+  font-size: 16px;
+  color: rgba(11, 5, 0, 0.6);
+}
+
+.subscribe-button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  height: 48px;
+  border: 1px solid #0B0500;
+  background: transparent;
+  font-size: 16px;
+  color: #0B0500;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.subscribe-note {
+  font-size: 12px;
+  color: #0B0500;
+  line-height: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 0;
+  border: none;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline-offset: -0.5px;
+}
+
+footer hr { 
+  margin: 0;
+}
+
+.footer-bottom div,
+.footer-copyright {
+  font-size: 14px;
+ 
+  font-weight: 400;
+  line-height: 21px;
+  color:#0B0500;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1440px) {
+  
+}
