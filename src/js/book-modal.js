@@ -3,6 +3,9 @@ import "accordion-js/dist/accordion.min.css";
 
 
 const accordionTriggers = document.querySelectorAll(".ac-trigger");
+const minusButton = document.querySelector(".minus-button");
+const plusButton = document.querySelector(".plus-button");
+const input = document.querySelector(".quantity-buttons-input");
 
 accordionTriggers.forEach(trigger => {
   trigger.addEventListener("click", () => {
@@ -23,4 +26,16 @@ accordionTriggers.forEach(trigger => {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
+});
+
+minusButton.addEventListener("click", () => {
+  let currentValue = parseInt(input.value);
+  if (currentValue > 1) {
+    input.value = currentValue - 1;
+  }
+});
+
+plusButton.addEventListener("click", () => {
+  let currentValue = parseInt(input.value);
+  input.value = currentValue + 1;
 });

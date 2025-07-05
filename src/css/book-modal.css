@@ -2,9 +2,16 @@
     border-radius: 16px;
     padding: 64px 16px;
     width: 343px;
+    max-height: 1747px;
     margin: auto;
     background: #FCEEE6;
+    position: relative;
+}
 
+.books-modal-picture {
+    border-radius: 8px;
+    width: 309px;
+    height: 467px;
 }
 
 .books-modal-header {
@@ -43,13 +50,19 @@
 .quantity-button {
     border: 1px solid #0b0500;
     border-radius: 4px;
-    
     min-width: 32px;
     height: 40px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-   
+    background-color: inherit;
+    transition: background-color 250ms ease-in-out;
+}
+
+.quantity-button:hover,
+.quantity-button:focus {
+    background-color: #ea8d50;
+    
 }
 
 .quantity-buttons-input {
@@ -88,14 +101,31 @@
     font-size: 16px;
     line-height: 150%;
     color: #fff;
+    transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.books-modal-add-button:hover,
+.books-modal-add-button:focus {
+    background-color: #0b0500;
+    border: 1px solid #0b0500;
 }
 .books-modal-buy-button {
     border: 1px solid #0b0500;
+    background-color: inherit;
     border-radius: 4px;
     padding: 12px 24px;
     width: 311px;
     height: 48px;
     margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    transition: background-color 250ms ease-in-out;
+}
+
+.books-modal-buy-button:hover,
+.books-modal-buy-button:focus {
+    background-color: #ea8d50;
 }
 
 .ac-header {
@@ -137,7 +167,6 @@
 
 .ac-panel {
     /* display: none; */
-
 }
 
 
@@ -218,3 +247,39 @@
     transition: max-height 0.3s ease;
     max-height: 0; 
 }
+
+@media screen and (min-width: 768px) {
+    .books-modal {
+        padding: 64px 32px;
+        width: 704px;
+        max-height: 664px;
+        display: flex;
+        gap: 24px;
+    }
+    
+@media screen and (min-width: 1440px) {
+    .books-modal {
+        padding: 64px;
+        width: 1300px;
+        max-height: 912px;
+        display: flex;
+        gap: 24px;
+    }
+
+    .books-modal-buy-buttons {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .books-modal-add-button {
+        margin-bottom: 0;
+    }
+
+    .books-modal-buy-button {
+        margin-bottom: 0;
+    }
+} 
+}
+
+
