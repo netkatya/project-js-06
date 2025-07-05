@@ -14,6 +14,7 @@ import {
   booksRefs,
   showLoader,
   hideLoader,
+  showBookModal,
 } from './helpers';
 
 let books = [];
@@ -173,7 +174,7 @@ export function toggleDropdown() {
   const rect = booksRefs.categoryBox.getBoundingClientRect();
   booksRefs.categoryModal.style.position = 'absolute';
   booksRefs.categoryModal.style.top = `${rect.bottom + 4}px`;
-  booksRefs.categoryModal.style.left = `${rect.left}px`;
+  booksRefs.categoryModal.style.left = `${rect.left - 8}px`;
   booksRefs.categoryModal.style.display = 'block';
 
   document.body.classList.add('modal-open'); // scroll blocked
@@ -213,8 +214,8 @@ function scrollAfterNewImages() {
 }
 
 export function closeCategoryList() {
-  booksRefs.dropdown.classList.remove('is-open');
   document.body.classList.remove('modal-open'); // scroll enabled
+  booksRefs.dropdown.classList.remove('is-open');
 
   booksRefs.categoryModal.style.position = '';
   booksRefs.categoryModal.style.top = '';
@@ -278,11 +279,44 @@ export async function loadBookById(id, append = false) {
     const book = await getBookById(id);
     console.dir(book);
 
-    // handleBooks(books, append);
+    handleBook(book);
   } catch (error) {
     hideLoadMoreButton();
     showErrorMsg('Error loading books from the server!');
   } finally {
     hideLoader();
   }
+}
+
+function handleBook({ _id, title, author, price, book_image, description }) {
+  // const bookImage = document.querySelector('.books-modal-picture');
+  // const bookHeader = document.querySelector('.books-modal-header');
+  // const bookAuthor = document.querySelector('.books-modal-text');
+  // const bookPrice = document.querySelector('.books-modal-price');
+  // const divBookModal = document.querySelector('div.books-modal');
+  // const bookDetails = document.querySelector('.ac-text.details');
+  // const bookQuantity = document.querySelector('.quantity-buttons-input');
+  // const bookShipping = document.querySelector('.ac-text.shipping');
+  // const bookReturns = document.querySelector('.ac-text.returns');
+
+  booksRefs.divBookModal.setAttribute('data-id', _id);
+
+  booksRefs.bookImage.src = book_image;
+  booksRefs.bookImage.alt = description;
+  booksRefs.bookHeader.textContent = title;
+  booksRefs.bookAuthor.textContent = author;
+  booksRefs.bookPrice.textContent = `${price}`;
+  booksRefs.bookQuantity.value = '1';
+
+  booksRefs.bookDetails.textContent = description
+    ? description
+    : `I Will Find You is a gripping thriller by the master of suspense,
+              Harlan Coben. The story follows David Burroughs, a former prisoner
+              wrongfully convicted of murdering his own son. When he discovers a
+              clue suggesting his son might still be alive, David escapes from
+              prison to uncover the truth. Fast-paced, emotional, and full of
+              unexpected twists — this novel will keep you hooked until the very
+              last page.`;
+  showBookModal();
+  document.body.classList.add('modal-open'); // scroll blocked
 }
