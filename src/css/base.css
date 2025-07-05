@@ -2,14 +2,18 @@
   --font-family: 'Rubik', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #FCEEE6;
   color: #0B0500;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+
   margin: 0;
-  
+  overflow-x: hidden;
+  width: 100%;
 }

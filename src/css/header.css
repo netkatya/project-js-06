@@ -1,11 +1,12 @@
 body.no-scroll {
   overflow: hidden;
-  position: fixed;
-  width: 100%;
+  padding-right: 17px;
 }
-html {
-  scroll-behavior: smooth;
-}
+
+/* body.no-scroll .header {
+  padding-right: 17px;
+} */
+
 .header {
   width: 100%;
   position: fixed;
@@ -48,8 +49,8 @@ html {
   pointer-events: none;
   transform: translate(100%);
   background-color: #fceee6;
-  transition: transform 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .mobile-menu.is-open {
@@ -93,6 +94,9 @@ html {
 .mobile-menu-nav-item:active {
   color: #ea8d50;
 }
+
+
+
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 16px;
