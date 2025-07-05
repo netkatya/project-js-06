@@ -13,6 +13,7 @@ export const booksRefs = {
   goToTopBtn: document.querySelector('.books-list-go-top'),
   dropdown: document.querySelector('.books-category-list'),
   dropdownList: document.querySelector('.category-dropdown-list'),
+  categoryModal: document.querySelector('.category-modal'),
   dropdownBtn: document.querySelector('.category-list-dropdown-button'),
   booksList: document.querySelector('.books-list'),
   booksShowedSummary: document.querySelector(
