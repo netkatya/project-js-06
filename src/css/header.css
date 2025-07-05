@@ -79,6 +79,7 @@ body.no-scroll {
   background-color: transparent;
   cursor: pointer;
 }
+
 .mobile-menu-nav-list {
   display: flex;
   flex-direction: column;
@@ -142,3 +143,6 @@ body.no-scroll {
 @media screen and (min-width: 1440px) {
 
 }
+
+
+
