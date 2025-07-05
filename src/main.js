@@ -1,9 +1,11 @@
 import "./js/header";
 import "./js/hero";
 import "./js/books";
+import "./js/book-modal"
 import "./js/feedbacks";
 import "./js/events";
 import "./js/article";
 import "./js/location";
 import "./js/footer";
 import "./js/modal";
+import "./js/loader";

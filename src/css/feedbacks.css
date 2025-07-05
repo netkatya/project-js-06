@@ -34,7 +34,9 @@
   border-radius: 16px;
   padding: 32px;
   width: 341px;
+  transition: box-shadow 0.25s ease-in-out;
 }
+
 .swiper-text-feedback {
   width: 277px;
   height: 108px;
@@ -118,5 +120,8 @@
   .swiper-button:hover {
     fill: black;
     background: transparent;
+  }
+  .slide-feedback:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 }
