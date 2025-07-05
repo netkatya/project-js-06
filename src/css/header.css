@@ -1,11 +1,10 @@
 body.no-scroll {
   overflow: hidden;
-  padding-right: 17px;
+  /* position: fixed; */
+
 }
 
-/* body.no-scroll .header {
-  padding-right: 17px;
-} */
+
 
 .header {
   width: 100%;
