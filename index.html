@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/project-js-06/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-06/assets/vendor-DLHqdSEL.js">
     <link rel="stylesheet" crossorigin href="/project-js-06/assets/vendor-BfljCx-y.css">
-    <link rel="stylesheet" crossorigin href="/project-js-06/assets/index-DMDQVBzq.css">
+    <link rel="stylesheet" crossorigin href="/project-js-06/assets/index-BZzysrVx.css">
   </head>
   <body>
     <header class="header">
@@ -189,7 +189,7 @@
   </div>
 </section>
 
-      <div class="events-modal-overlay books-modal-overlay is-open">
+      <div class="events-modal-overlay books-modal-overlay">
   <div class="books-modal">
     <button class="events-close-button">
       <svg>
@@ -197,7 +197,7 @@
       </svg>
     </button>
     <img src="" alt="" class="books-modal-picture" />
-    <div>
+    <div class="book-modal-form">
       <h2 class="books-modal-header"></h2>
       <p class="books-modal-text"></p>
       <p class="books-modal-price"></p>
@@ -205,6 +205,7 @@
         <button class="quantity-button minus-button">-</button>
         <input
           type="number"
+          name="quantity"
           class="quantity-buttons-input"
           value="1"
           readonly
@@ -212,8 +213,12 @@
         <button class="quantity-button plus-button">+</button>
       </div>
       <div class="books-modal-buy-buttons">
-        <button class="books-modal-add-button">Add To Cart</button>
-        <button class="books-modal-buy-button">Buy Now</button>
+        <button class="books-modal-add-button" type="button">
+          Add To Cart
+        </button>
+        <button class="books-modal-buy-button" type="submit" name="buy-now">
+          Buy Now
+        </button>
       </div>
 
       <div class="accordion-container">
@@ -231,7 +236,7 @@
             </button>
           </h4>
           <div class="ac-panel">
-            <p class="ac-text">
+            <p class="ac-text details">
               I Will Find You is a gripping thriller by the master of suspense,
               Harlan Coben. The story follows David Burroughs, a former prisoner
               wrongfully convicted of murdering his own son. When he discovers a
@@ -256,7 +261,7 @@
             </button>
           </h4>
           <div class="ac-panel">
-            <p class="ac-text">
+            <p class="ac-text shipping">
               We ship across the United States within 2–5 business days. All
               orders are processed through USPS or a reliable courier service.
               Enjoy free standard shipping on orders over $50.
@@ -277,7 +282,7 @@
             </button>
           </h4>
           <div class="ac-panel">
-            <p class="ac-text">
+            <p class="ac-text returns">
               You can return an item within 14 days of receiving your order,
               provided it hasn’t been used and is in its original condition. To
               start a return, please contact our support team — we’ll guide you
