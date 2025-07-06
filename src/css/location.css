@@ -51,7 +51,8 @@
   height: 60px;
 }
 .loc-map iframe {
-  width: 343px;
+  /* max-width: 343px; */
+  width: 100%;
   height: 395px;
 }
 .loc-contact-text {
@@ -93,7 +94,7 @@
     margin-top: 8px;
   }
   .loc-map iframe {
-    width: 704px;
+    /* max-width: 704px; */
     height: 395px;
   }
 }
@@ -106,7 +107,7 @@
     width: 704px;
   }
   .loc-map iframe {
-    width: 1312px;
+    /* width: 1312px; */
     height: 738px;
   }
 }
