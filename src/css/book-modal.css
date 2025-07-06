@@ -1,12 +1,20 @@
 .books-modal {
-  border-radius: 16px;
-  padding: 64px 16px;
-  width: 343px;
-  margin: auto;
-  background: #fceee6;
-  color: #0b0500;
-  position: relative;
+    top: 30px;
+    border-radius: 16px;
+    padding: 64px 16px;
+    width: 343px;
+    margin: auto;
+    background: #fceee6;
+    color: #0b0500;
+    position: relative;
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
+.books-modal::-webkit-scrollbar {
+    display: none;
 }
 
 .books-modal-picture {

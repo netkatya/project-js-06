@@ -69,3 +69,7 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .category-modal {
   background-color: #140a01;
 }
+
+.body-dark-theme .category-list-dropdown-button:hover {
+  background-color: transparent;
+}
