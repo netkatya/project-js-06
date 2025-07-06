@@ -174,7 +174,7 @@ export function toggleDropdown() {
   const rect = booksRefs.categoryBox.getBoundingClientRect();
   booksRefs.categoryModal.style.position = 'absolute';
   booksRefs.categoryModal.style.top = `${rect.bottom + 4}px`;
-  booksRefs.categoryModal.style.left = `${rect.left - 8}px`;
+  booksRefs.categoryModal.style.left = `${rect.left}px`;
   booksRefs.categoryModal.style.display = 'block';
 
   document.body.classList.add('modal-open'); // scroll blocked
@@ -214,13 +214,15 @@ function scrollAfterNewImages() {
 }
 
 export function closeCategoryList() {
-  document.body.classList.remove('modal-open'); // scroll enabled
   booksRefs.dropdown.classList.remove('is-open');
+  booksRefs.dropdown.addEventListener('transitionend', function handler(event) {
+    if (event.propertyName === 'opacity') {
+      booksRefs.categoryModal.style.display = '';
 
-  booksRefs.categoryModal.style.position = '';
-  booksRefs.categoryModal.style.top = '';
-  booksRefs.categoryModal.style.left = '';
-  booksRefs.categoryModal.style.display = '';
+      booksRefs.categoryModal.removeEventListener('transitionend', handler);
+    }
+  });
+  document.body.classList.remove('modal-open'); // scroll enabled
 }
 
 export function dropdownListOnClick(event) {

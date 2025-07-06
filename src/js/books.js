@@ -38,3 +38,11 @@ window.addEventListener('keydown', event => {
     closeCategoryList();
   }
 });
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1440) {
+    booksRefs.categoryModal.style.position = '';
+    booksRefs.categoryModal.style.top = '';
+    booksRefs.categoryModal.style.left = '';
+  }
+});
