@@ -2,6 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import { booksRefs, showInfoMsg } from './helpers';
 
+console.dir(Accordion);
 
 // new Accordion('.accordion-container', {
 //   duration: 500,
@@ -61,3 +62,22 @@ plusButton.addEventListener('click', () => {
   let currentValue = parseInt(input.value);
   input.value = currentValue + 1;
 });
+
+booksRefs.bookModal.addEventListener('click', event => {
+  if (event.target === booksRefs.bookModal) {
+    closeBookModal();
+  }
+});
+
+function closeBookModal() {
+  booksRefs.bookModal.classList.remove('is-open');
+  document.body.classList.remove('modal-open');
+}
+
+window.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeBookModal();
+  }
+});
+
+booksRefs.bookModalCloseBtn.addEventListener('click', closeBookModal);

@@ -31,6 +31,9 @@ export const booksRefs = {
   bookQuantity: document.querySelector('.quantity-buttons-input'),
   bookShipping: document.querySelector('.ac-text.shipping'),
   bookReturns: document.querySelector('.ac-text.returns'),
+  bookModalCloseBtn: document.querySelector(
+    '.books-modal-overlay .events-close-button'
+  ),
 };
 
 export function showErrorMsg(msg) {
