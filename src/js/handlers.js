@@ -277,7 +277,6 @@ export function booksListOnClick(event) {
 export async function loadBookById(id, append = false) {
   try {
     const book = await getBookById(id);
-    console.dir(book);
 
     handleBook(book);
   } catch (error) {
@@ -289,16 +288,6 @@ export async function loadBookById(id, append = false) {
 }
 
 function handleBook({ _id, title, author, price, book_image, description }) {
-  // const bookImage = document.querySelector('.books-modal-picture');
-  // const bookHeader = document.querySelector('.books-modal-header');
-  // const bookAuthor = document.querySelector('.books-modal-text');
-  // const bookPrice = document.querySelector('.books-modal-price');
-  // const divBookModal = document.querySelector('div.books-modal');
-  // const bookDetails = document.querySelector('.ac-text.details');
-  // const bookQuantity = document.querySelector('.quantity-buttons-input');
-  // const bookShipping = document.querySelector('.ac-text.shipping');
-  // const bookReturns = document.querySelector('.ac-text.returns');
-
   booksRefs.divBookModal.setAttribute('data-id', _id);
 
   booksRefs.bookImage.src = book_image;
