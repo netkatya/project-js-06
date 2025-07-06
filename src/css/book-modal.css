@@ -2,14 +2,23 @@
   border-radius: 16px;
   padding: 64px 16px;
   width: 343px;
-  /* max-height: 1747px; */
-  max-height: auto;
+  max-height: 100vh;
+  /* max-height: auto; */
   margin: auto;
   background: #fceee6;
   color: #0b0500;
   position: relative;
-  /* overflow-x: auto; */
-  /* overflow-y: auto; */
+  top: 20px;
+  overflow-y: auto;
+}
+
+.book-modal {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.book-modal::-webkit-scrollbar {
+  display: none;
 }
 
 .books-modal-picture {
@@ -246,6 +255,8 @@
     padding: 64px 32px;
     width: 704px;
     /* max-height: 664px; */
+    max-height: unset;
+    overflow-y: unset;
     display: flex;
     gap: 24px;
   }
