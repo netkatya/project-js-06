@@ -1,13 +1,12 @@
 .location {
   padding-top: 64px;
-  padding-bottom: 24px;
+  padding-bottom: 64px;
 }
 .loc-fine {
   margin-bottom: 32px;
 }
 .loc-h {
-  width: 343px;
-  height: 58px;
+  
   font-weight: 600;
   font-size: 48px;
   line-height: 1.2;
@@ -16,8 +15,6 @@
   margin-bottom: 24px;
 }
 .loc-one {
-  width: 69px;
-  height: 24px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -26,7 +23,7 @@
   margin-bottom: 16px;
 }
 .loc-two {
-  width: 343px;
+  max-width: 343px;
   height: 81px;
   font-weight: 400;
   font-size: 18px;
@@ -37,7 +34,7 @@
   flex-direction: column;
   gap: 24px;
   margin-top: 32px;
-  width: 343px;
+  max-width: 343px;
   height: 244px;
 }
 .loc-contact-item {
@@ -46,8 +43,7 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
-
-  width: 343px;
+  max-width: 343px;
   height: 60px;
 }
 .loc-map iframe {
@@ -94,7 +90,9 @@
     margin-top: 8px;
   }
   .loc-map iframe {
+
     /* max-width: 704px; */
+
     height: 395px;
   }
 }

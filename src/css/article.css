@@ -1,11 +1,7 @@
 .article {
   padding: 64px 0;
 }
-.container {
-}
-.article-cont {
-  max-width: 343px;
-}
+
 .article-title {
   font-weight: 600;
   font-size: 36px;
@@ -18,11 +14,6 @@
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 32px;
-}
-.article-picture {
-}
-
-.article-image {
 }
 
 .article-img {
