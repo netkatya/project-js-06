@@ -5,7 +5,6 @@
   padding-bottom: 32px;
 }
 
-
 .books-section-filter {
   margin-bottom: 4px;
 }
@@ -440,9 +439,13 @@ body.category-modal-overlay {
     background-color: transparent;
   }
 
-  .books-list {
-    max-width: 980px;
+  .books-right-side {
+    width: 980px;
   }
+
+  /* .books-list {
+    max-width: 980px;
+  } */
 
   .dropdown-content li {
     padding: 8px 0px;
