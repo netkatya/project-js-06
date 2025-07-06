@@ -1,5 +1,5 @@
 .body-dark-theme {
-  background-color: #0b0500;
+  background-color: #140a01;
   color: #fceee6;
 }
 .button-dark-theme {
@@ -7,13 +7,13 @@
 }
 body.body-dark-theme button:hover {
   background-color: #fceee6;
-  color: #0b0500;
+  color: #140a01;
 }
 body.body-dark-theme .slide-feedback {
   border: 1px solid rgba(216, 203, 196, 0.15);
 }
 .body-dark-theme .header {
-  background-color: #0b0500;
+  background-color: #140a01;
 }
 .body-dark-theme .header-logo {
   fill: #fceee6;
@@ -33,8 +33,8 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .books-main-btn.books-transparent-btn:hover,
 .books-main-btn.books-transparent-btn:focus {
   background-color: #ea8d50;
-  border: 1px solid #0b0500;
-  color: #0b0500;
+  border: 1px solid #140a01;
+  color: #140a01;
 }
 .body-dark-theme .loc-svg {
   fill: #fceee6;
@@ -50,5 +50,5 @@ body.body-dark-theme .slide-feedback {
   border: 1px solid rgba(216, 203, 196, 0.15);
 }
 .body-dark-theme .category-modal {
-  background-color: #0b0500;
+  background-color: #140a01;
 }
