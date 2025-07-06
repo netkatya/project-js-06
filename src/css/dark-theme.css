@@ -24,6 +24,9 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .header-burger {
   fill: #fceee6;
 }
+.body-dark-theme .close-btn:hover {
+  background-color: transparent;
+}
 .body-dark-theme .events-list-button {
   background-color: #fceee6;
 }
@@ -34,6 +37,9 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .events-list-button:hover {
   background: #140a01;
   color: #fceee6;
+}
+.body-dark-theme .events-list-button-arrow {
+  fill: #fceee6;
 }
 .body-dark-theme .swiper-pagination-bullet {
   background-color: #fceee6;
