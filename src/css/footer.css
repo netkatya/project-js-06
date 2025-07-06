@@ -49,6 +49,11 @@
   text-decoration: none;
 }
 
+.footer-nav a:hover,
+.footer-nav a:focus {
+  color: #fceee6;
+}
+
 .footer-subscribe {
   display: flex;
   flex-direction: column;
