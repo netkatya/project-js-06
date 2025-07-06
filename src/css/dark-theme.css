@@ -1,23 +1,33 @@
 .body-dark-theme {
   background-color: #140a01;
   color: #fceee6;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
+
+
 .button-dark-theme {
   color: #fceee6;
+  transition: color 500ms ease-in-out;
 }
+
 body.body-dark-theme button:hover {
   background-color: #fceee6;
   color: #140a01;
 }
+
 .body-dark-theme .burger-btn:hover {
   background-color: transparent;
 }
+
 body.body-dark-theme .slide-feedback {
   border: 1px solid rgba(216, 203, 196, 0.15);
 }
+
 .body-dark-theme .header {
   background-color: #140a01;
+  transition: background-color 500ms ease-in-out;
 }
+
 .body-dark-theme .header-logo {
   fill: #fceee6;
 }
@@ -73,3 +83,4 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .category-list-dropdown-button:hover {
   background-color: transparent;
 }
+

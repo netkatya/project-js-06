@@ -12,6 +12,7 @@ body.no-scroll {
   padding-top: 14px;
   padding-bottom: 14px;
   background-color: #fceee6;
+  transition: background-color 500ms ease-in-out;
 }
 .switch {
   position: relative;

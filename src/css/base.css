@@ -15,4 +15,5 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  transition: background-color 500ms ease-in-out;
 }
