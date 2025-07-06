@@ -36,3 +36,6 @@ body.body-dark-theme .slide-feedback {
   border: 1px solid #0b0500;
   color: #0b0500;
 }
+.body-dark-theme .loc-svg {
+  fill: #fceee6;
+}

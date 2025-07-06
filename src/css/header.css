@@ -286,16 +286,13 @@ body.no-scroll {
   }
 }
 
-.switch1 {
-  display: none;
-}
 .header-container {
   display: flex;
   justify-content: space-between;
 }
 .header-nav {
   display: flex;
-  gap: 24px;
+  gap: 60px;
 }
 .header-logo {
   display: block;
@@ -376,12 +373,6 @@ body.no-scroll {
 }
 
 @media screen and (min-width: 768px) {
-  .switch1 {
-    display: block;
-  }
-  .switch2 {
-    display: none;
-  }
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
