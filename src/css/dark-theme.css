@@ -39,3 +39,16 @@ body.body-dark-theme .slide-feedback {
 .body-dark-theme .loc-svg {
   fill: #fceee6;
 }
+
+.body-dark-theme .books-category-box {
+  border: 1px solid rgba(216, 203, 196, 0.15);
+}
+.body-dark-theme .category-icon {
+  fill: #fceee6;
+}
+.body-dark-theme .category-list-dropdown-button {
+  border: 1px solid rgba(216, 203, 196, 0.15);
+}
+.body-dark-theme .category-modal {
+  background-color: #0b0500;
+}
