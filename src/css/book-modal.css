@@ -2,13 +2,23 @@
   border-radius: 16px;
   padding: 64px 16px;
   width: 343px;
-  /* max-height: 1000px; */
+  max-height: 100vh;
   /* max-height: auto; */
   margin: auto;
   background: #fceee6;
   color: #0b0500;
   position: relative;
-  overflow-y: scroll;
+  top: 20px;
+  overflow-y: auto;
+}
+
+.book-modal {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.book-modal::-webkit-scrollbar {
+  display: none;
 }
 
 .books-modal-picture {
