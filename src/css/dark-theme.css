@@ -9,6 +9,9 @@ body.body-dark-theme button:hover {
   background-color: #fceee6;
   color: #140a01;
 }
+.body-dark-theme .burger-btn:hover {
+  background-color: transparent;
+}
 body.body-dark-theme .slide-feedback {
   border: 1px solid rgba(216, 203, 196, 0.15);
 }
@@ -23,6 +26,14 @@ body.body-dark-theme .slide-feedback {
 }
 .body-dark-theme .events-list-button {
   background-color: #fceee6;
+}
+.body-dark-theme .events-list-button {
+  background: #140a01;
+  color: #fceee6;
+}
+.body-dark-theme .events-list-button:hover {
+  background: #140a01;
+  color: #fceee6;
 }
 .body-dark-theme .swiper-pagination-bullet {
   background-color: #fceee6;
