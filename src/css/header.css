@@ -415,3 +415,5 @@ body.no-scroll {
     color: #ea8d50;
   }
 }
+@media screen and (min-width: 1440px) {
+}

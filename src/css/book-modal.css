@@ -1,232 +1,225 @@
 .books-modal {
-    border-radius: 16px;
-    padding: 64px 16px;
-    width: 343px;
-    max-height: 1747px;
-    margin: auto;
-    background: #FCEEE6;
-    position: relative;
+  border-radius: 16px;
+  padding: 64px 16px;
+  width: 343px;
+  /* max-height: 1747px; */
+  max-height: auto;
+  margin: auto;
+  background: #fceee6;
+  color: #0b0500;
+  position: relative;
+  /* overflow-x: auto; */
+  /* overflow-y: auto; */
 }
 
 .books-modal-picture {
-    border-radius: 8px;
-    width: 309px;
-    height: 467px;
+  border-radius: 8px;
+  width: 309px;
+  height: 467px;
 }
 
 .books-modal-header {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
 }
 
 .books-modal-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 8px;
 }
 
 .books-modal-price {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }
 
 .quantity-buttons {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .quantity-buttons {
-    margin-bottom: 16px;
-
+  margin-bottom: 16px;
 }
 
 .quantity-button {
-    border: 1px solid #0b0500;
-    border-radius: 4px;
-    min-width: 32px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    background-color: inherit;
-    transition: background-color 250ms ease-in-out;
+  border: 1px solid #0b0500;
+  border-radius: 4px;
+  min-width: 32px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  background-color: inherit;
+  transition: background-color 250ms ease-in-out;
 }
 
 .quantity-button:hover,
 .quantity-button:focus {
-    background-color: #ea8d50;
-    
+  background-color: #ea8d50;
 }
 
 .quantity-buttons-input {
-    border: 1px solid rgba(11, 5, 0, 0.15);
-    border-radius: 4px;
-    padding: 8px 12px;
-    width: 42px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    background: rgba(11, 5, 0, 0.05);
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 42px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  background: rgba(11, 5, 0, 0.05);
 }
 
-.quantity-buttons-input[type=number]::-webkit-outer-spin-button,
-.quantity-buttons-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.quantity-buttons-input[type='number']::-webkit-outer-spin-button,
+.quantity-buttons-input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-
-.quantity-buttons-input[type=number] {
-    -moz-appearance: textfield;
+.quantity-buttons-input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .books-modal-add-button {
-    border: 1px solid #e15d05;
-    border-radius: 4px;
-    padding: 12px 24px;
-    width: 311px;
-    height: 48px;
-    background-color: #e15d05;
-    margin-bottom: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #fff;
-    transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+  border: 1px solid #e15d05;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 311px;
+  height: 48px;
+  background-color: #e15d05;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
 }
 
 .books-modal-add-button:hover,
 .books-modal-add-button:focus {
-    background-color: #0b0500;
-    border: 1px solid #0b0500;
+  background-color: #0b0500;
+  border: 1px solid #0b0500;
 }
 .books-modal-buy-button {
-    border: 1px solid #0b0500;
-    background-color: inherit;
-    border-radius: 4px;
-    padding: 12px 24px;
-    width: 311px;
-    height: 48px;
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    transition: background-color 250ms ease-in-out;
+  border: 1px solid #0b0500;
+  background-color: inherit;
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: 311px;
+  height: 48px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  transition: background-color 250ms ease-in-out;
 }
 
 .books-modal-buy-button:hover,
 .books-modal-buy-button:focus {
-    background-color: #ea8d50;
+  background-color: #ea8d50;
 }
 
 .ac-header {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .books-ac-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-    border-bottom: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: solid 1px;
 }
 
-
-
 .ac-button {
-    width: 24px;
-    height: 25px;
-    border: none;
-    background-color: inherit;
+  width: 24px;
+  height: 25px;
+  border: none;
+  background-color: inherit;
 }
 
 .ac-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
-
 
 .books-modal,
 .books-ac,
 .books-ac-header,
 .ac-panel {
-    background-color: #FCEEE6;
+  background-color: #fceee6;
 }
 
 .ac-panel {
-    /* display: none; */
+  /* display: none; */
 }
 
-
-
 .ac {
-    border: none !important;
-    background: none !important;
-    box-shadow: none !important; 
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .ac-header {
-    background: none !important;
-    padding: 0 !important;
-    border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  border: none !important;
 }
-
 
 .ac-trigger::before {
-    display: none !important;
-    content: none !important;
+  display: none !important;
+  content: none !important;
 }
 
-
 .ac-trigger {
-    padding: 0 !important;
-    font-weight: normal;
-   
-    background: none !important;
-    border: none !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  padding: 0 !important;
+  font-weight: normal;
+
+  background: none !important;
+  border: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .ac-panel {
-    padding: 0 !important;
-    background: none !important; 
+  padding: 0 !important;
+  background: none !important;
 }
 
 .ac-trigger::before,
 .ac-trigger::after {
-    display: none !important;
-    content: none !important;
+  display: none !important;
+  content: none !important;
 }
 
-
 .ac-trigger {
-    background-image: none !important;
+  background-image: none !important;
 }
 
 .ac.is-active .ac-button {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease; 
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
 .books-ac-header {
-    border-top: 1px solid rgba(11, 5, 0, 0.15) !important;
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+  border-top: 1px solid rgba(11, 5, 0, 0.15) !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 /* .books-ac-header.last {
@@ -235,51 +228,49 @@
 } */
 
 .ac-trigger {
-    display: flex !important;
+  display: flex !important;
 }
 
 .ac-button {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .ac-panel {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 0;
 }
 
 @media screen and (min-width: 768px) {
+  .books-modal {
+    padding: 64px 32px;
+    width: 704px;
+    /* max-height: 664px; */
+    display: flex;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
     .books-modal {
-        padding: 64px 32px;
-        width: 704px;
-        max-height: 664px;
-        display: flex;
-        gap: 24px;
-    }
-    
-@media screen and (min-width: 1440px) {
-    .books-modal {
-        padding: 64px;
-        width: 1300px;
-        max-height: 912px;
-        display: flex;
-        gap: 24px;
+      padding: 64px;
+      width: 1300px;
+      /* max-height: 912px; */
+      display: flex;
+      gap: 24px;
     }
 
     .books-modal-buy-buttons {
-        display: flex;
-        gap: 24px;
-        margin-bottom: 32px;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 32px;
     }
 
     .books-modal-add-button {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
 
     .books-modal-buy-button {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
-} 
+  }
 }
-
-
