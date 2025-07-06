@@ -5,6 +5,7 @@
   padding-bottom: 32px;
 }
 
+
 .books-section-filter {
   margin-bottom: 4px;
 }
@@ -183,7 +184,7 @@ body.category-modal-overlay {
 }
 
 .books-list-load-more.books-main-btn {
-  width: 302px;
+  width: 342px;
 }
 
 .books-main-btn:active {
