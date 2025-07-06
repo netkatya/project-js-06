@@ -23,7 +23,7 @@ const swiperFeedback = new Swiper('.feedbacks .swiper', {
       slidesPerView: 2,
       spaceBetween: 24,
     },
-    1024: {
+    1400: {
       slidesPerView: 3,
       spaceBetween: 24,
     },

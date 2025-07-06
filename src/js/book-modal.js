@@ -5,10 +5,10 @@ import { booksRefs, showInfoMsg } from './helpers';
 
 // new Accordion('.accordion-container', {
 //   duration: 500,
-//   // showMultiple: true,
-//   // onOpen: function (currentElement) {
-//   //   console.log(currentElement);
-//   // },
+//   showMultiple: true,
+//   onOpen: function (currentElement) {
+//     console.log(currentElement);
+//   },
 // });
 
 const accordionTriggers = document.querySelectorAll('.ac-trigger');

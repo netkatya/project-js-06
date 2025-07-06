@@ -22,16 +22,12 @@
 .books-section-subheader {
   font-weight: 600;
   font-size: 20px;
-
   line-height: 1.5;
-  color: #0b0500;
 }
 .books-section-subheader-summary {
   font-weight: 400;
   font-size: 14px;
-
   line-height: 1.5;
-  color: #0b0500;
 }
 
 .loader {
@@ -63,7 +59,6 @@
   font-size: 18px;
 
   line-height: 1.5;
-  color: #0b0500;
 }
 
 .books-category-list {
@@ -301,7 +296,6 @@ body.category-modal-overlay {
 
   line-height: 1.5;
   text-transform: capitalize;
-  color: #0b0500;
 
   width: 272px;
 
@@ -317,7 +311,6 @@ body.category-modal-overlay {
   font-size: 20px;
 
   line-height: 1.5;
-  color: #0b0500;
 }
 
 .books-item__author {
@@ -327,7 +320,7 @@ body.category-modal-overlay {
   font-size: 14px;
 
   line-height: 1.5;
-  color: #0b0500;
+
   margin-bottom: 16px;
 
   display: inline-block;

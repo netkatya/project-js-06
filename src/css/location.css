@@ -5,9 +5,6 @@
 .loc-fine {
   margin-bottom: 32px;
 }
-.loc-txt {
-}
-
 .loc-h {
   width: 343px;
   height: 58px;
@@ -15,7 +12,7 @@
   font-size: 48px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #0b0500;
+
   margin-bottom: 24px;
 }
 .loc-one {
@@ -25,7 +22,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #0b0500;
+
   margin-bottom: 16px;
 }
 .loc-two {
@@ -34,7 +31,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #0b0500;
 }
 .loc-contact-card {
   display: flex;
@@ -69,7 +65,6 @@
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  color: #0b0500;
 }
 
 .link {
@@ -78,7 +73,6 @@
   line-height: 1.5;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #0b0500;
 }
 
 @media screen and (min-width: 768px) {
