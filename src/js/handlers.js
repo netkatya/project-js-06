@@ -259,21 +259,6 @@ export function booksListOnClick(event) {
   const currentBookid = currentListItem.dataset.id.trim();
 
   loadBookById(currentBookid);
-
-  // const cartArray = getDataFromLS(STORAGE_KEYS.cart, []);
-  // const wlArray = getDataFromLS(STORAGE_KEYS.wishlist, []);
-
-  // updateTextAddToCartBtn(cartArray);
-  // updateTextaddToWishListBtn(wlArray);
-
-  // const cartProduct = cartArray.find(({ id }) => id === currentProductid);
-  // if (cartProduct) {
-  //   refs.productQuantity.value = cartProduct.quantity;
-  // } else {
-  //   refs.productQuantity.value = 0;
-  // }
-
-  // toggleModal();
 }
 
 export async function loadBookById(id, append = false) {
@@ -291,12 +276,13 @@ export async function loadBookById(id, append = false) {
 
 function handleBook({ _id, title, author, price, book_image, description }) {
   booksRefs.divBookModal.setAttribute('data-id', _id);
+  booksRefs.divBookModal.setAttribute('data-price', price);
 
   booksRefs.bookImage.src = book_image;
   booksRefs.bookImage.alt = description;
   booksRefs.bookHeader.textContent = title;
   booksRefs.bookAuthor.textContent = author;
-  booksRefs.bookPrice.textContent = `${price}`;
+  booksRefs.bookPrice.textContent = `$${price}`;
   booksRefs.bookQuantity.value = '1';
 
   booksRefs.bookDetails.textContent = description
@@ -308,6 +294,7 @@ function handleBook({ _id, title, author, price, book_image, description }) {
               prison to uncover the truth. Fast-paced, emotional, and full of
               unexpected twists — this novel will keep you hooked until the very
               last page.`;
+
   showBookModal();
   document.body.classList.add('modal-open'); // scroll blocked
 }

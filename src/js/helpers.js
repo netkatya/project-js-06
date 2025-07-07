@@ -66,5 +66,10 @@ export function hideLoadMoreButton() {
 }
 
 export function showBookModal() {
+  const scrollY = window.scrollY;
+
   booksRefs.bookModal.classList.add('is-open');
+
+  document.body.style.top = `-${scrollY}px`;
+  document.body.style.width = '100%';
 }
