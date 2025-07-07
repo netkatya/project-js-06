@@ -364,7 +364,7 @@ body.category-modal-overlay {
 
   .books-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 40px 24px;
     flex-wrap: wrap;
   }
