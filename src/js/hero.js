@@ -53,9 +53,9 @@ function updateSlideAccessibility(swiper) {
 const prevBtn = document.querySelector('.hero .button-prev');
 const nextBtn = document.querySelector('.hero .button-next');
 
-prevBtn?.addEventListener('keydown', (e) =>
+prevBtn.addEventListener('keydown', (e) =>
   handleSwiperKeyPress(e, swiperHero, 'prev')
 );
-nextBtn?.addEventListener('keydown', (e) =>
+nextBtn.addEventListener('keydown', (e) =>
   handleSwiperKeyPress(e, swiperHero, 'next')
 );
