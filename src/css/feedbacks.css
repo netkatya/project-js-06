@@ -10,7 +10,7 @@
   margin-bottom: 24px;
 }
 .feedbacks-text {
-  width: 343px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -18,7 +18,7 @@
 }
 .feedbacks .swiper {
   margin: 0px;
-  width: 341px;
+  /* width: 341px; */
   height: 314px;
 }
 .swiper-container-feedback {
@@ -33,12 +33,12 @@
   border: 1px solid rgba(11, 5, 0, 0.15);
   border-radius: 16px;
   padding: 32px;
-  width: 341px;
+  /* max-width: 341px; */
   transition: box-shadow 0.25s ease-in-out;
 }
 
 .swiper-text-feedback {
-  width: 277px;
+  
   height: 108px;
   font-weight: 400;
   font-size: 18px;
