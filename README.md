@@ -15,9 +15,13 @@ detailed information in modals, switch between light and dark themes.
 
 🔗 Live Site: https://netkatya.github.io/project-js-06/
 
-👩‍💼 Team Lead @netkatya
+👩‍💼 Team Lead 
 
-👥 Contributors @Viktor-Lyulchik
+@netkatya
+
+👥 Contributors 
+
+@Viktor-Lyulchik
 
 @AndriiButenko05
 
