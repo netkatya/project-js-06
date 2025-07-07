@@ -298,3 +298,14 @@ function handleBook({ _id, title, author, price, book_image, description }) {
   showBookModal();
   document.body.classList.add('modal-open'); // scroll blocked
 }
+
+export function handleSwiperKeyPress(event, swiper, direction) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    if (direction === 'next') {
+      swiper.slideNext();
+    } else if (direction === 'prev') {
+      swiper.slidePrev();
+    }
+  }
+}

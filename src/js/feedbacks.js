@@ -3,12 +3,13 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { handleSwiperKeyPress  } from './handlers';
 
 // FEEDBACK Swiper (section: feedbacks)
 const swiperFeedback = new Swiper('.feedbacks .swiper', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 20, 
   navigation: {
     nextEl: '.feedbacks .button-next',
     prevEl: '.feedbacks .button-prev',
@@ -29,3 +30,8 @@ const swiperFeedback = new Swiper('.feedbacks .swiper', {
     },
   },
 });
+const prevBtn = document.querySelector('.button-prev');
+const nextBtn = document.querySelector('.button-next');
+
+prevBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperFeedback, 'prev'));
+nextBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperFeedback, 'next'));
