@@ -42,6 +42,7 @@ eventModal.addEventListener('click', event => {
 // Закриття по натисканню Escape
 window.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
+    event.preventDefault();
     closeModal();
   }
 });
