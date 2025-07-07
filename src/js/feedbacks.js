@@ -1,15 +1,15 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { handleSwiperKeyPress  } from './handlers';
+import { handleSwiperKeyPress } from './handlers';
 
 // FEEDBACK Swiper (section: feedbacks)
 const swiperFeedback = new Swiper('.feedbacks .swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard],
   slidesPerView: 1,
-  spaceBetween: 20, 
+  spaceBetween: 20,
   navigation: {
     nextEl: '.feedbacks .button-next',
     prevEl: '.feedbacks .button-prev',
@@ -18,6 +18,10 @@ const swiperFeedback = new Swiper('.feedbacks .swiper', {
   pagination: {
     el: '.feedbacks .pagination-for-swiper',
     clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
   },
   breakpoints: {
     768: {
@@ -30,8 +34,17 @@ const swiperFeedback = new Swiper('.feedbacks .swiper', {
     },
   },
 });
-const prevBtn = document.querySelector('.button-prev');
-const nextBtn = document.querySelector('.button-next');
 
-prevBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperFeedback, 'prev'));
-nextBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperFeedback, 'next'));
+const fedbacksPrevBtn = document.querySelector(
+  '.section-feedbacks-nav-btns > .button-prev'
+);
+const fedbacksNextBtn = document.querySelector(
+  '.section-feedbacks-nav-btns > .button-next'
+);
+
+fedbacksPrevBtn.addEventListener('keydown', e =>
+  handleSwiperKeyPress(e, swiperFeedback, 'prev')
+);
+fedbacksNextBtn.addEventListener('keydown', e =>
+  handleSwiperKeyPress(e, swiperFeedback, 'next')
+);

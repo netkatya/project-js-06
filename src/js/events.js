@@ -1,13 +1,13 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { handleSwiperKeyPress  } from './handlers';
+import { handleSwiperKeyPress } from './handlers';
 
 // EVENTS Swiper (section: events)
 const swiperEvents = new Swiper('.events .swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Keyboard],
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
@@ -19,6 +19,10 @@ const swiperEvents = new Swiper('.events .swiper', {
     el: '.events .pagination-for-swiper',
     clickable: true,
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -29,8 +33,17 @@ const swiperEvents = new Swiper('.events .swiper', {
     },
   },
 });
-const prevBtn = document.querySelector('.button-prev');
-const nextBtn = document.querySelector('.button-next');
 
-prevBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperEvents, 'prev'));
-nextBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperEvents, 'next'));
+const eventsPrevBtn = document.querySelector(
+  '.section-events-nav-btns > .button-prev'
+);
+const eventsNextBtn = document.querySelector(
+  '.section-events-nav-btns > .button-next'
+);
+
+eventsPrevBtn.addEventListener('keydown', e => {
+  handleSwiperKeyPress(e, swiperEvents, 'prev');
+});
+eventsNextBtn.addEventListener('keydown', e => {
+  handleSwiperKeyPress(e, swiperEvents, 'next');
+});
