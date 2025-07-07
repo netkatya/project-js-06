@@ -101,6 +101,7 @@
   border-radius: 4px;
   padding: 12px 24px;
   max-width: 311px;
+  min-width: 290px;
   height: 48px;
   background-color: #e15d05;
   margin-bottom: 24px;
@@ -122,6 +123,7 @@
   border-radius: 4px;
   padding: 12px 24px;
   max-width: 311px;
+  min-width: 290px;
   height: 48px;
   margin-bottom: 32px;
   font-weight: 400;
