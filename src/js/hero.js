@@ -3,6 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
+import { handleSwiperKeyPress  } from './handlers';
 
 const swiperHero = new Swiper('.hero .swiper', {
   modules: [Navigation, Pagination, Autoplay],
@@ -18,3 +19,8 @@ const swiperHero = new Swiper('.hero .swiper', {
   }
 });
 
+const prevBtn = document.querySelector('.button-prev');
+const nextBtn = document.querySelector('.button-next');
+
+prevBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperHero, 'prev'));
+nextBtn.addEventListener('keydown', (e) => handleSwiperKeyPress(e, swiperHero, 'next'));
