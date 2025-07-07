@@ -299,3 +299,9 @@ function handleBook({ _id, title, author, price, book_image, description }) {
   document.body.classList.add('modal-open'); // scroll blocked
 }
 
+export function handleSwiperKeyPress(e, swiper, direction) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    direction === 'next' ? swiper.slideNext() : swiper.slidePrev();
+  }
+}

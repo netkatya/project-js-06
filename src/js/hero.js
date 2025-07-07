@@ -3,6 +3,7 @@ import { Navigation, Keyboard, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay } from 'swiper/modules';
+import { handleSwiperKeyPress } from './handlers';
 
 
 const swiperHero = new Swiper('.hero .swiper', {
@@ -47,13 +48,6 @@ function updateSlideAccessibility(swiper) {
   });
 }
 
-
-function handleSwiperKeyPress(e, swiper, direction) {
-  if (e.key === 'Enter' || e.key === ' ') {
-    e.preventDefault();
-    direction === 'next' ? swiper.slideNext() : swiper.slidePrev();
-  }
-}
 
 
 const prevBtn = document.querySelector('.hero .button-prev');
