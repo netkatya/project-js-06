@@ -21,12 +21,13 @@ navList.addEventListener('click', event => {
   return;
 });
 
-const themeSwitcher = document.querySelector('#input');
+const themeSwitcher = document.querySelector('.input');
 
 themeSwitcher.addEventListener('change', () => {
   const isDark = themeSwitcher.checked;
 
   document.body.classList.toggle('body-dark-theme', isDark);
+
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
