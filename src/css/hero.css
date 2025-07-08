@@ -1,5 +1,3 @@
-
-
 .baner {
   width: 100%;
   background-size: cover;
@@ -8,16 +6,16 @@
 }
 
 .baner-1 {
-  background-image: url(/img/hero/banner1-mob.png);
+  background-image: url(/img/hero/banner1-mob.webp);
 }
 .baner-2 {
-  background-image: url(/img/hero/banner2-mob.png);
+  background-image: url(/img/hero/banner2-mob.webp);
 }
 .baner-3 {
-  background-image: url(/img/hero/banner3-mob.png);
+  background-image: url(/img/hero/banner3-mob.webp);
 }
 .baner-4 {
-  background-image: url(/img/hero/banner4-mob.png);
+  background-image: url(/img/hero/banner4-mob.webp);
 }
 
 .slider-nav-icon {
@@ -82,16 +80,16 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 2x) {
   .baner-1 {
-    background-image: url(/img/hero/banner1-mob@2x.png);
+    background-image: url(/img/hero/banner1-mob@2x.webp);
   }
   .baner-2 {
-    background-image: url(/img/hero/banner2-mob@2x.png);
+    background-image: url(/img/hero/banner2-mob@2x.webp);
   }
   .baner-3 {
-    background-image: url(/img/hero/banner3-mob@2x.png);
+    background-image: url(/img/hero/banner3-mob@2x.webp);
   }
   .baner-4 {
-    background-image: url(/img/hero/banner4-mob@2x.png);
+    background-image: url(/img/hero/banner4-mob@2x.webp);
   }
 }
 
@@ -127,31 +125,31 @@
     justify-content: space-between;
   }
   .baner-1 {
-    background-image: url(/img/hero/banner1-tab.png);
+    background-image: url(/img/hero/banner1-tab.webp);
   }
   .baner-2 {
-    background-image: url(/img/hero/banner2-tab.png);
+    background-image: url(/img/hero/banner2-tab.webp);
   }
   .baner-3 {
-    background-image: url(/img/hero/banner3-tab.png);
+    background-image: url(/img/hero/banner3-tab.webp);
   }
   .baner-4 {
-    background-image: url(/img/hero/banner4-tab.png);
+    background-image: url(/img/hero/banner4-tab.webp);
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
   .baner-1 {
-    background-image: url(/img/hero/banner1-tab@2x.png);
+    background-image: url(/img/hero/banner1-tab@2x.webp);
   }
   .baner-2 {
-    background-image: url(/img/hero/banner2-tab@2x.png);
+    background-image: url(/img/hero/banner2-tab@2x.webp);
   }
   .baner-3 {
-    background-image: url(/img/hero/banner3-tab@2x.png);
+    background-image: url(/img/hero/banner3-tab@2x.webp);
   }
   .baner-4 {
-    background-image: url(/img/hero/banner4-tab@2x.png);
+    background-image: url(/img/hero/banner4-tab@2x.webp);
   }
 }
 
@@ -193,30 +191,30 @@
   }
 
   .baner-1 {
-    background-image: url(/img/hero/banner1-desk.png);
+    background-image: url(/img/hero/banner1-desk.webp);
   }
   .baner-2 {
-    background-image: url(/img/hero/banner2-desk.png);
+    background-image: url(/img/hero/banner2-desk.webp);
   }
   .baner-3 {
-    background-image: url(/img/hero/banner3-desk.png);
+    background-image: url(/img/hero/banner3-desk.webp);
   }
   .baner-4 {
-    background-image: url(/img/hero/banner4-desk.png);
+    background-image: url(/img/hero/banner4-desk.webp);
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 2x) {
   .baner-1 {
-    background-image: url(/img/hero/banner1-desk@2x.png);
+    background-image: url(/img/hero/banner1-desk@2x.webp);
   }
   .baner-2 {
-    background-image: url(/img/hero/banner2-desk@2x.png);
+    background-image: url(/img/hero/banner2-desk@2x.webp);
   }
   .baner-3 {
-    background-image: url(/img/hero/banner3-desk@2x.png);
+    background-image: url(/img/hero/banner3-desk@2x.webp);
   }
   .baner-4 {
-    background-image: url(/img/hero/banner4-desk@2x.png);
+    background-image: url(/img/hero/banner4-desk@2x.webp);
   }
 }
