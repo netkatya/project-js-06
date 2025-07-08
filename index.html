@@ -24,7 +24,7 @@
     <header class="header">
   <div class="container header-container">
     <nav class="header-nav">
-      <a href="index.html">
+      <a href="index.html" aria-label="To the main page">
         <svg class="header-logo" width="84" height="36">
           <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-logo"></use>
         </svg>
@@ -110,7 +110,7 @@
     </nav>
     <!-- From Uiverse.io by RiccardoRapelli -->
 
-    <button type="button" class="burger-btn">
+    <button type="button" class="burger-btn" aria-label="Mobile menu">
       <svg class="header-burger" width="24" height="24">
         <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-burger"></use>
       </svg>
@@ -119,12 +119,12 @@
   <div class="mobile-menu">
     <div class="container mobile-menu-container">
       <div class="logo-container">
-        <a href="index.html">
+        <a href="index.html" aria-label="To the main page">
           <svg class="header-logo" width="84" height="36">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-logo"></use>
           </svg>
         </a>
-        <button type="button" class="close-btn">
+        <button type="button" class="close-btn" aria-label="Mobile menu close">
           <svg class="header-logo" width="12" height="12">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-close"></use>
           </svg>
@@ -196,12 +196,15 @@
         </div>
 
         <div class="buttons buttons-for-swiper buttons-hero">
-          <button class="swiper-button button-prev">
+          <button
+            class="swiper-button button-prev"
+            aria-label="swiper previous"
+          >
             <svg class="slider-nav-icon" width="14" height="14">
               <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-left"></use>
             </svg>
           </button>
-          <button class="swiper-button button-next">
+          <button class="swiper-button button-next" aria-label="swiper next">
             <svg class="slider-nav-icon" width="14" height="14">
               <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-right"></use>
             </svg>
@@ -224,7 +227,10 @@
         </div>
         <div class="books-category-box">
           <h4 class="books-category-header">Categories</h4>
-          <button class="category-list-dropdown-button">
+          <button
+            class="category-list-dropdown-button"
+            aria-label="List dropdown button"
+          >
             <svg class="category-icon" width="12" height="8">
               <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-down"></use>
             </svg>
@@ -292,12 +298,17 @@
         </div>
       </div>
       <div class="books-list-bottom-btns">
-        <button class="books-list-load-more books-main-btn" type="button">
+        <button
+          class="books-list-load-more books-main-btn"
+          type="button"
+          aria-label="Show more"
+        >
           Show More
         </button>
         <button
           class="books-list-go-top books-main-btn visually-hidden"
           type="button"
+          aria-label="Go to top"
         >
           <svg class="go-top-icon" width="14" height="14">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-top"></use>
@@ -310,31 +321,44 @@
 
       <div class="events-modal-overlay books-modal-overlay">
   <div class="books-modal">
-    <button class="events-close-button">
+    <button class="events-close-button" aria-label="Events-close">
       <svg>
         <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-cross" width="16" height="16"></use>
       </svg>
     </button>
-    <img src="/project-js-06/" alt="" class="books-modal-picture" />
+    <img src="/project-js-06/" alt="book modal picture" class="books-modal-picture" />
     <div class="book-modal-form">
       <h2 class="books-modal-header"></h2>
       <p class="books-modal-text"></p>
       <p class="books-modal-price"></p>
       <div class="quantity-buttons">
-        <button class="quantity-button minus-button">-</button>
+        <button class="quantity-button minus-button" aria-label="Minus button">
+          -
+        </button>
         <input
           type="number"
           name="quantity"
           class="quantity-buttons-input"
           value="1"
         />
-        <button class="quantity-button plus-button">+</button>
+        <button class="quantity-button plus-button" aria-label="Plus button">
+          +
+        </button>
       </div>
       <div class="books-modal-buy-buttons">
-        <button class="books-modal-add-button" type="button">
+        <button
+          class="books-modal-add-button"
+          type="button"
+          aria-label="Add to cart"
+        >
           Add To Cart
         </button>
-        <button class="books-modal-buy-button" type="submit" name="buy-now">
+        <button
+          class="books-modal-buy-button"
+          type="submit"
+          name="buy-now"
+          aria-label="Buy button"
+        >
           Buy Now
         </button>
       </div>
@@ -343,7 +367,11 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header">
             <h4>Details</h4>
-            <button type="button" class="ac-trigger">
+            <button
+              type="button"
+              class="ac-trigger"
+              aria-label="Details information"
+            >
               <svg class="ac-button">
                 <use
                   href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-down"
@@ -369,7 +397,7 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header">
             <h4>Shipping</h4>
-            <button type="button" class="ac-trigger">
+            <button type="button" class="ac-trigger" aria-label="Shipping accordion">
               <svg class="ac-button">
                 <use
                   href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-down"
@@ -391,7 +419,7 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header last">
             <h4>Returns</h4>
-            <button type="button" class="ac-trigger my-ac-triger">
+            <button type="button" class="ac-trigger my-ac-triger" aria-label="Returns information">
               <svg class="ac-button">
                 <use
                   href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-down"
@@ -529,12 +557,20 @@
     <div class="controls controls-for-swiper">
       <div class="pagination-for-swiper"></div>
       <div class="buttons buttons-for-swiper section-feedbacks-nav-btns">
-        <button class="swiper-button button-prev" type="button">
+        <button
+          class="swiper-button button-prev"
+          type="button"
+          aria-label="Swiper previous"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button class="swiper-button button-next" type="button">
+        <button
+          class="swiper-button button-next"
+          type="button"
+          aria-label="Swiper next"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-right"></use>
           </svg>
@@ -574,7 +610,11 @@
               Join us for an evening of tea, thoughtful conversation, and shared
               reflections as we dive into Matt Haig’s bestseller.
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-right"></use>
@@ -600,7 +640,11 @@
               A hands-on session for aspiring designers and curious readers.
               Learn what makes a cover stand out — from concept to print.
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-right"></use>
@@ -626,7 +670,11 @@
               A magical morning of stories, games, and imagination for our
               youngest book lovers (ages 4–8).
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-list-right"></use>
@@ -639,12 +687,20 @@
     <div class="controls controls-for-swiper">
       <div class="pagination-for-swiper"></div>
       <div class="buttons buttons-for-swiper section-events-nav-btns">
-        <button class="swiper-button button-prev" type="button">
+        <button
+          class="swiper-button button-prev"
+          type="button"
+          aria-label="Swiper previous"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button class="swiper-button button-next" type="button">
+        <button
+          class="swiper-button button-next"
+          type="button"
+          aria-label="Swiper next"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-arrow-right"></use>
           </svg>
@@ -706,34 +762,48 @@
       <ul class="loc-contact-card">
         <li class="loc-contact-item">
           <!-- SVG ICON EMAIL -->
-          <svg class="loc-svg" width="24" height="24">
+          <svg class="loc-svg" width="24" height="24" aria-label="icon email">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-email"></use>
           </svg>
           <div class="contact-text">
             <p class="label">Email</p>
-            <a href="mailto:hello@booksy.com" class="link">hello@booksy.com</a>
+            <a
+              href="mailto:hello@booksy.com"
+              class="link"
+              aria-label="email booksy"
+              >hello@booksy.com</a
+            >
           </div>
         </li>
 
         <li class="loc-contact-item">
           <!-- SVG ICON PHONE -->
-          <svg class="loc-svg" width="24" height="24">
+          <svg class="loc-svg" width="24" height="24" aria-label="icon phone">
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-phone"></use>
           </svg>
           <div class="loc-contact-text">
             <p class="label">Phone</p>
-            <a href="tel:+612413043012" class="link">+61 (241) 304-3012</a>
+            <a href="tel:+612413043012" class="link" aria-label="phone booksy"
+              >+61 (241) 304-3012</a
+            >
           </div>
         </li>
 
         <li class="loc-contact-item">
           <!-- SVG ICON LOCATION -->
-          <svg class="loc-svg" width="24" height="24">
+          <svg
+            class="loc-svg"
+            width="24"
+            height="24"
+            aria-label="icon location"
+          >
             <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-location"></use>
           </svg>
           <div class="loc-contact-text">
             <p class="label">Office</p>
-            <a href="https://maps.app.goo.gl/ZZf7BSgt5P7YXkyS9"
+            <a
+              href="https://maps.app.goo.gl/ZZf7BSgt5P7YXkyS9"
+              aria-label="location booksy"
               >123 Books St, Sydney NSW 2000 AU</a
             >
           </div>
@@ -748,6 +818,7 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        title="our location"
       ></iframe>
     </div>
   </div>
@@ -761,7 +832,7 @@
       <div class="footer-top-block">
         <div class="footer-column">
           <div class="footer-logo">
-            <a href="index.html">
+            <a href="index.html" aria-label="To the main page">
               <svg width="83" height="21">
                 <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-logo"></use>
               </svg>
@@ -785,7 +856,9 @@
             required
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-          <button type="submit" class="subscribe-button">Sign Up</button>
+          <button type="submit" class="subscribe-button" aria-label="Sign up">
+            Sign Up
+          </button>
         </form>
 
         <p class="subscribe-note">* Required field</p>
@@ -803,6 +876,7 @@
     <button
       type="button"
       class="events-close-button events-close-button-events"
+      aria-label="modal window close"
     >
       <svg>
         <use href="/project-js-06/assets/icon-CfnKhWa_.svg#icon-cross" width="16" height="16"></use>
@@ -837,7 +911,9 @@
         ></textarea>
       </label>
 
-      <button type="submit" class="events-modal-button">Register</button>
+      <button type="submit" class="events-modal-button" aria-label="register">
+        Register
+      </button>
     </form>
   </div>
 </div>
