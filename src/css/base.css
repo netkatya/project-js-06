@@ -1,3 +1,28 @@
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-400.woff2') format('woff2');
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-500.woff2') format('woff2');
+}
+/* rubik-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/rubik-600.woff2') format('woff2');
+}
+
 :root {
   --font-family: 'Rubik', sans-serif;
 }
