@@ -149,7 +149,7 @@ export function renderBooks(arrBooks, append = false) {
     .map(
       ({ _id, title, author, price, book_image, description }) =>
         `<li class="books-item" data-id="${_id}">
-            <img class="books-item__image" src="${book_image}" alt="${description}"/>
+            <img class="books-item__image" src="${book_image}" alt="${description} loading="lazy""/>
             <div class="books-item__header">
               <span class="books-item__title">${title}</span>
               <span class="books-item__price"> ${'$' + price}</span>
