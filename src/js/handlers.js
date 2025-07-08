@@ -131,6 +131,23 @@ export function goToTopBtnOnClick(goToTopBtn) {
 }
 // katya
 
+// m width="343" height="487"
+// t width: 340px; height: 483px;
+// d width: 227px; height: 322px
+
+function getSizesOfImage() {
+  let width = 343;
+  let height = 487;
+  if (window.innerWidth >= 1440) {
+    width = 227;
+    height = 322;
+  } else if (window.innerWidth >= 768) {
+    width = 340;
+    height = 483;
+  }
+  return `width="${width}" height="${height}"`;
+}
+
 export function renderBooks(arrBooks, append = false) {
   let startIndex;
   if (page === 1) {
@@ -149,7 +166,7 @@ export function renderBooks(arrBooks, append = false) {
     .map(
       ({ _id, title, author, price, book_image, description }) =>
         `<li class="books-item" data-id="${_id}">
-            <img class="books-item__image" src="${book_image}" alt="${description} loading="lazy""/>
+            <img class="books-item__image" src="${book_image}" alt="${description}" loading="lazy" ${getSizesOfImage()} />
             <div class="books-item__header">
               <span class="books-item__title">${title}</span>
               <span class="books-item__price"> ${'$' + price}</span>
