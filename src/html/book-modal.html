@@ -1,30 +1,43 @@
 <div class="events-modal-overlay books-modal-overlay">
   <div class="books-modal">
-    <button class="events-close-button">
+    <button class="events-close-button" aria-label="Events-close">
       <svg>
         <use href="/img/icon.svg#icon-cross" width="16" height="16"></use>
       </svg>
     </button>
-    <img src="/" alt="" class="books-modal-picture" />
+    <img src="/" alt="book modal picture" class="books-modal-picture" />
     <div class="book-modal-form">
       <h2 class="books-modal-header"></h2>
       <p class="books-modal-text"></p>
       <p class="books-modal-price"></p>
       <div class="quantity-buttons">
-        <button class="quantity-button minus-button">-</button>
+        <button class="quantity-button minus-button" aria-label="Minus button">
+          -
+        </button>
         <input
           type="number"
           name="quantity"
           class="quantity-buttons-input"
           value="1"
         />
-        <button class="quantity-button plus-button">+</button>
+        <button class="quantity-button plus-button" aria-label="Plus button">
+          +
+        </button>
       </div>
       <div class="books-modal-buy-buttons">
-        <button class="books-modal-add-button" type="button">
+        <button
+          class="books-modal-add-button"
+          type="button"
+          aria-label="Add to cart"
+        >
           Add To Cart
         </button>
-        <button class="books-modal-buy-button" type="submit" name="buy-now">
+        <button
+          class="books-modal-buy-button"
+          type="submit"
+          name="buy-now"
+          aria-label="Buy button"
+        >
           Buy Now
         </button>
       </div>
@@ -33,7 +46,11 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header">
             <h4>Details</h4>
-            <button type="button" class="ac-trigger">
+            <button
+              type="button"
+              class="ac-trigger"
+              aria-label="Details information"
+            >
               <svg class="ac-button">
                 <use
                   href="/img/icon.svg#icon-list-down"
@@ -59,7 +76,7 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header">
             <h4>Shipping</h4>
-            <button type="button" class="ac-trigger">
+            <button type="button" class="ac-trigger" aria-label="Shipping accordion">
               <svg class="ac-button">
                 <use
                   href="/img/icon.svg#icon-list-down"
@@ -81,7 +98,7 @@
         <div class="ac books-ac">
           <div class="ac-header books-ac-header last">
             <h4>Returns</h4>
-            <button type="button" class="ac-trigger my-ac-triger">
+            <button type="button" class="ac-trigger my-ac-triger" aria-label="Returns information">
               <svg class="ac-button">
                 <use
                   href="/img/icon.svg#icon-list-down"
