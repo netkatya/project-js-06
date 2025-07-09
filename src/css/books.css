@@ -11,6 +11,7 @@
 
 .books-right-side {
   margin-top: 24px;
+  min-height: 6575px;
 }
 
 .books-section-subheader-box {
@@ -362,6 +363,10 @@ body.category-modal-overlay {
     flex-basis: 249px;
   }
 
+  .books-right-side {
+    min-height: 3304px;
+  }
+
   .books-list {
     display: flex;
     justify-content: flex-start;
@@ -443,6 +448,7 @@ body.category-modal-overlay {
 
   .books-right-side {
     width: 980px;
+    min-height: 2993px;
   }
 
   /* .books-list {
