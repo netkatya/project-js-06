@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container header-container">
     <nav class="header-nav">
-      <a href="index.html">
+      <a href="index.html" aria-label="To the main page">
         <svg class="header-logo" width="84" height="36">
           <use href="/img/icon.svg#icon-logo"></use>
         </svg>
@@ -19,9 +19,19 @@
           <a href="#location">Location</a>
         </li>
       </ul>
+<<<<<<< HEAD
       <label class="switch switch1">
-        <span class="visually-hidden">light and dark theme toggle</span>
         <input id="input" type="checkbox" checked class="switch-input1" />
+=======
+      <label class="switch switch1" for="input">
+        <input
+          id="input"
+          name="input"
+          type="checkbox"
+          checked
+          class="switch-input1"
+        />
+>>>>>>> 42918e2fff0105eca07c914515b441f9c3c73f14
         <span class="slider round">
           <span class="sun-moon">
             <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
@@ -88,7 +98,7 @@
     </nav>
     <!-- From Uiverse.io by RiccardoRapelli -->
 
-    <button type="button" class="burger-btn">
+    <button type="button" class="burger-btn" aria-label="Mobile menu">
       <svg class="header-burger" width="24" height="24">
         <use href="/img/icon.svg#icon-burger"></use>
       </svg>
@@ -97,12 +107,12 @@
   <div class="mobile-menu">
     <div class="container mobile-menu-container">
       <div class="logo-container">
-        <a href="index.html">
+        <a href="index.html" aria-label="To the main page">
           <svg class="header-logo" width="84" height="36">
             <use href="/img/icon.svg#icon-logo"></use>
           </svg>
         </a>
-        <button type="button" class="close-btn">
+        <button type="button" class="close-btn" aria-label="Mobile menu close">
           <svg class="header-logo" width="12" height="12">
             <use href="/img/icon.svg#icon-close"></use>
           </svg>

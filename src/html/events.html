@@ -12,14 +12,15 @@
           <picture>
             <source
               srcset="
-                /img/events/events1@1x.png 1x,
-                /img/events/events1@2x.png 2x
+                /img/events/events1@1x.webp 1x,
+                /img/events/events1@2x.webp 2x
               "
             />
             <img
-              src="/img/events/events1@1x.png"
+              src="/img/events/events1@1x.webp"
               alt="Cozy book club"
               class="events-list-picture"
+              loading="lazy"
             />
           </picture>
           <div class="events-list-content">
@@ -31,7 +32,11 @@
               Join us for an evening of tea, thoughtful conversation, and shared
               reflections as we dive into Matt Haig’s bestseller.
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/img/icon.svg#icon-list-right"></use>
@@ -43,14 +48,15 @@
           <picture>
             <source
               srcset="
-                /img/events/events2@1x.png 1x,
-                /img/events/events2@2x.png 2x
+                /img/events/events2@1x.webp 1x,
+                /img/events/events2@2x.webp 2x
               "
             />
             <img
-              src="/img/events/events2@1x.png"
+              src="/img/events/events2@1x.webp"
               alt="Design workshop"
               class="events-list-picture"
+              loading="lazy"
             />
           </picture>
           <div class="events-list-content">
@@ -60,7 +66,11 @@
               A hands-on session for aspiring designers and curious readers.
               Learn what makes a cover stand out — from concept to print.
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/img/icon.svg#icon-list-right"></use>
@@ -72,14 +82,15 @@
           <picture>
             <source
               srcset="
-                /img/events/events3@1x.png 1x,
-                /img/events/events3@2x.png 2x
+                /img/events/events3@1x.webp 1x,
+                /img/events/events3@2x.webp 2x
               "
             />
             <img
-              src="/img/events/events3@1x.png"
+              src="/img/events/events3@1x.webp"
               alt="Children reading"
               class="events-list-picture"
+              loading="lazy"
             />
           </picture>
           <div class="events-list-content">
@@ -89,7 +100,11 @@
               A magical morning of stories, games, and imagination for our
               youngest book lovers (ages 4–8).
             </p>
-            <button type="button" class="events-list-button">
+            <button
+              type="button"
+              class="events-list-button"
+              aria-label="Register button"
+            >
               Register
               <svg class="events-list-button-arrow" width="8" height="12">
                 <use href="/img/icon.svg#icon-list-right"></use>
@@ -101,13 +116,21 @@
     </div>
     <div class="controls controls-for-swiper">
       <div class="pagination-for-swiper"></div>
-      <div class="buttons buttons-for-swiper">
-        <button class="swiper-button button-prev" type="button">
+      <div class="buttons buttons-for-swiper section-events-nav-btns">
+        <button
+          class="swiper-button button-prev"
+          type="button"
+          aria-label="Swiper previous"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/img/icon.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button class="swiper-button button-next" type="button">
+        <button
+          class="swiper-button button-next"
+          type="button"
+          aria-label="Swiper next"
+        >
           <svg class="svg-button-prev" width="14" height="14">
             <use href="/img/icon.svg#icon-arrow-right"></use>
           </svg>

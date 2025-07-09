@@ -4,7 +4,7 @@
       <div class="footer-top-block">
         <div class="footer-column">
           <div class="footer-logo">
-            <a href="index.html">
+            <a href="index.html" aria-label="To the main page">
               <svg width="83" height="21">
                 <use href="/img/icon.svg#icon-logo"></use>
               </svg>
@@ -25,10 +25,13 @@
             type="email"
             class="subscribe-input"
             placeholder="Enter your email"
+            aria-label="Write your email"
             required
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-          <button type="submit" class="subscribe-button">Sign Up</button>
+          <button type="submit" class="subscribe-button" aria-label="Sign up">
+            Sign Up
+          </button>
         </form>
 
         <p class="subscribe-note">* Required field</p>
