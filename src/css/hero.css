@@ -34,6 +34,18 @@
   margin-bottom: 16px;
 }
 
+.slide-one-hero-text {
+  max-width: 172px;
+}
+
+.slide-two-hero-text {
+  max-width: 172px;
+}
+
+.slide-four-hero-text {
+  max-width: 240px;
+}
+
 .hero-btn {
   border: 0.52px solid #e15d05;
   background-color: #e15d05;
@@ -103,6 +115,19 @@
     font-size: 32px;
     line-height: 1.2;
   }
+
+  .slide-one-hero-text {
+      max-width: 274px; 
+  }
+
+  .slide-two-hero-text {
+    max-width: 230px; 
+  }
+
+  .slide-four-hero-text {
+    max-width: 390px; 
+  }
+
   .hero-btn {
     border: 1px solid #e15d05;
     border-radius: 4px;
@@ -162,6 +187,18 @@
     padding-top: 155px;
     padding-left: 56px;
     font-size: 52px;
+  }
+
+  .slide-one-hero-text {
+      max-width: 440px; 
+  }
+
+  .slide-two-hero-text {
+      max-width: 380px; 
+  }
+
+  .slide-four-hero-text {
+      max-width: 600px; 
   }
 
   .hero-btn {
