@@ -102,7 +102,11 @@
     margin-left: 80px;
   }
   .loc-two {
-    width: 704px;
+    width: 732px;
+  }
+
+  .loc-txt {
+    width: 732px;
   }
   .loc-map iframe {
     /* width: 1312px; */
